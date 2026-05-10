@@ -1,0 +1,49 @@
+digraph disagreements {
+rankdir=LR;
+subgraph cluster_0 { label="generation_0";
+n_0_0 [label="mixed_range:[abx-z]/y",shape=ellipse];
+n_0_1 [label="dot_newline:./
+",shape=ellipse];
+n_0_2 [label="dot_newline:./
+",shape=ellipse];
+n_0_3 [label="dot_newline:./
+",shape=ellipse];
+n_0_4 [label="dot_newline:./
+",shape=ellipse];
+n_0_5 [label="dot_newline:./
+",shape=ellipse];
+n_0_6 [label="dot_newline:./
+",shape=ellipse];
+n_0_7 [label="dot_newline:./
+",shape=ellipse];
+n_0_8 [label="mixed_range:[abx-z]/y",shape=ellipse];
+n_0_9 [label="dot_newline:./
+",shape=ellipse];
+}
+subgraph cluster_1 { label="generation_1";
+n_1_0 [label="dot_newline:./
+",shape=ellipse];
+n_1_1 [label="dot_newline:./
+",shape=ellipse];
+n_1_2 [label="dot_newline:./
+",shape=ellipse];
+}
+subgraph cluster_2 { label="generation_2";
+}
+subgraph cluster_3 { label="generation_3";
+n_3_0 [label="dot_newline:./
+",shape=ellipse];
+n_3_1 [label="dot_newline:./
+",shape=ellipse];
+n_3_2 [label="dot_newline:./
+",shape=ellipse];
+n_3_3 [label="dot_newline:./
+",shape=ellipse];
+n_3_4 [label="dot_newline:./
+",shape=ellipse];
+n_3_5 [label="dot_newline:./
+",shape=ellipse];
+}
+subgraph cluster_4 { label="generation_4";
+}
+}
