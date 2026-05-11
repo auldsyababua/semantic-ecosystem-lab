@@ -1,0 +1,41 @@
+experiment_id: null
+seed: 2026
+population_size: 80
+initial_case_count: 1000
+generation_count: 8
+topology_density: 2.0
+semantic_pressure: cyclic
+constitution_weights:
+  STRICT_ASCII: 0.7
+  PERMISSIVE_REGEX: 1.5
+  LEGACY_ENGINE: 1.2
+  UNIX_STYLE: 0.7
+  WEIRD_BUT_CONSISTENT: 1.4
+  RANDOM_MUTANT: 1.5
+geography:
+  width: 20
+  height: 20
+  layout: grid
+  migration_probability: 0.0
+pressure:
+  inheritance_mix_rate: 0.35
+  mutation_rate: 0.08
+  random_mutant_rate: 0.12
+  family_mutation_rate: 0.15
+  adversary_initial_ratio: 0.22
+  adversary_child_ratio: 0.18
+  local_radius: 2
+phase_shocks:
+  enabled: true
+ablations:
+  geography: false
+  adversaries: false
+  inheritance: false
+  constitutions: false
+  invariant_synthesis: false
+  local_influence: false
+  migration: false
+  clustering: false
+output:
+  root: data/runs
+  write_legacy: false

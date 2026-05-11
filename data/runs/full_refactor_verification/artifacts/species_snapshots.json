@@ -1,0 +1,262 @@
+[
+  {
+    "generation": "generation_0",
+    "families": {
+      "table_driven_matcher": 21,
+      "finite_state_machine": 13,
+      "direct_pattern_walker": 16,
+      "compiled_instruction_vm": 11,
+      "token_stream_interpreter": 8,
+      "recursive_descent": 11
+    },
+    "constitutions": {
+      "PERMISSIVE_REGEX": 13,
+      "LEGACY_ENGINE": 11,
+      "STRICT_ASCII": 19,
+      "UNIX_STYLE": 15,
+      "WEIRD_BUT_CONSISTENT": 7,
+      "RANDOM_MUTANT": 15
+    },
+    "adversaries": {
+      "mimic": 5,
+      "none": 70,
+      "poisoner": 2,
+      "cooperator": 1,
+      "exploiter": 2
+    },
+    "species": {
+      "table_driven_matcher:PERMISSIVE_REGEX": 5,
+      "finite_state_machine:LEGACY_ENGINE": 2,
+      "table_driven_matcher:STRICT_ASCII": 4,
+      "table_driven_matcher:LEGACY_ENGINE": 4,
+      "direct_pattern_walker:UNIX_STYLE": 4,
+      "compiled_instruction_vm:STRICT_ASCII": 3,
+      "direct_pattern_walker:STRICT_ASCII": 4,
+      "table_driven_matcher:UNIX_STYLE": 4,
+      "compiled_instruction_vm:WEIRD_BUT_CONSISTENT": 3,
+      "token_stream_interpreter:RANDOM_MUTANT": 3,
+      "token_stream_interpreter:WEIRD_BUT_CONSISTENT": 1,
+      "finite_state_machine:PERMISSIVE_REGEX": 1,
+      "finite_state_machine:WEIRD_BUT_CONSISTENT": 1,
+      "finite_state_machine:RANDOM_MUTANT": 4,
+      "direct_pattern_walker:PERMISSIVE_REGEX": 3,
+      "finite_state_machine:UNIX_STYLE": 2,
+      "direct_pattern_walker:LEGACY_ENGINE": 2,
+      "recursive_descent:STRICT_ASCII": 3,
+      "compiled_instruction_vm:RANDOM_MUTANT": 2,
+      "token_stream_interpreter:STRICT_ASCII": 2,
+      "finite_state_machine:STRICT_ASCII": 3,
+      "recursive_descent:UNIX_STYLE": 3,
+      "table_driven_matcher:RANDOM_MUTANT": 3,
+      "direct_pattern_walker:RANDOM_MUTANT": 2,
+      "recursive_descent:RANDOM_MUTANT": 1,
+      "table_driven_matcher:WEIRD_BUT_CONSISTENT": 1,
+      "compiled_instruction_vm:UNIX_STYLE": 2,
+      "recursive_descent:LEGACY_ENGINE": 3,
+      "token_stream_interpreter:PERMISSIVE_REGEX": 2,
+      "recursive_descent:PERMISSIVE_REGEX": 1,
+      "compiled_instruction_vm:PERMISSIVE_REGEX": 1,
+      "direct_pattern_walker:WEIRD_BUT_CONSISTENT": 1
+    }
+  },
+  {
+    "generation": "generation_1",
+    "families": {
+      "direct_pattern_walker": 26,
+      "compiled_instruction_vm": 14,
+      "finite_state_machine": 11,
+      "recursive_descent": 10,
+      "table_driven_matcher": 12,
+      "token_stream_interpreter": 7
+    },
+    "constitutions": {
+      "UNIX_STYLE": 17,
+      "STRICT_ASCII": 24,
+      "WEIRD_BUT_CONSISTENT": 14,
+      "RANDOM_MUTANT": 12,
+      "PERMISSIVE_REGEX": 11,
+      "LEGACY_ENGINE": 2
+    },
+    "adversaries": {
+      "none": 67,
+      "mimic": 4,
+      "poisoner": 2,
+      "exploiter": 6,
+      "cooperator": 1
+    },
+    "species": {
+      "direct_pattern_walker:UNIX_STYLE": 9,
+      "compiled_instruction_vm:STRICT_ASCII": 4,
+      "finite_state_machine:UNIX_STYLE": 2,
+      "compiled_instruction_vm:UNIX_STYLE": 1,
+      "compiled_instruction_vm:WEIRD_BUT_CONSISTENT": 4,
+      "direct_pattern_walker:WEIRD_BUT_CONSISTENT": 2,
+      "compiled_instruction_vm:RANDOM_MUTANT": 5,
+      "recursive_descent:UNIX_STYLE": 3,
+      "table_driven_matcher:UNIX_STYLE": 2,
+      "recursive_descent:STRICT_ASCII": 4,
+      "table_driven_matcher:PERMISSIVE_REGEX": 3,
+      "finite_state_machine:WEIRD_BUT_CONSISTENT": 3,
+      "token_stream_interpreter:WEIRD_BUT_CONSISTENT": 3,
+      "direct_pattern_walker:STRICT_ASCII": 8,
+      "table_driven_matcher:WEIRD_BUT_CONSISTENT": 2,
+      "token_stream_interpreter:STRICT_ASCII": 4,
+      "finite_state_machine:STRICT_ASCII": 2,
+      "table_driven_matcher:STRICT_ASCII": 2,
+      "recursive_descent:PERMISSIVE_REGEX": 2,
+      "table_driven_matcher:LEGACY_ENGINE": 2,
+      "finite_state_machine:PERMISSIVE_REGEX": 2,
+      "direct_pattern_walker:PERMISSIVE_REGEX": 4,
+      "direct_pattern_walker:RANDOM_MUTANT": 3,
+      "finite_state_machine:RANDOM_MUTANT": 2,
+      "recursive_descent:RANDOM_MUTANT": 1,
+      "table_driven_matcher:RANDOM_MUTANT": 1
+    }
+  },
+  {
+    "generation": "generation_2",
+    "families": {
+      "compiled_instruction_vm": 18,
+      "direct_pattern_walker": 18,
+      "finite_state_machine": 16,
+      "table_driven_matcher": 13,
+      "token_stream_interpreter": 10,
+      "recursive_descent": 5
+    },
+    "constitutions": {
+      "RANDOM_MUTANT": 18,
+      "PERMISSIVE_REGEX": 15,
+      "WEIRD_BUT_CONSISTENT": 27,
+      "UNIX_STYLE": 5,
+      "STRICT_ASCII": 13,
+      "LEGACY_ENGINE": 2
+    },
+    "adversaries": {
+      "none": 67,
+      "mimic": 3,
+      "exploiter": 7,
+      "cooperator": 1,
+      "poisoner": 2
+    },
+    "species": {
+      "compiled_instruction_vm:RANDOM_MUTANT": 4,
+      "direct_pattern_walker:PERMISSIVE_REGEX": 3,
+      "finite_state_machine:RANDOM_MUTANT": 4,
+      "compiled_instruction_vm:WEIRD_BUT_CONSISTENT": 8,
+      "direct_pattern_walker:WEIRD_BUT_CONSISTENT": 3,
+      "finite_state_machine:WEIRD_BUT_CONSISTENT": 6,
+      "direct_pattern_walker:UNIX_STYLE": 4,
+      "finite_state_machine:PERMISSIVE_REGEX": 5,
+      "table_driven_matcher:RANDOM_MUTANT": 3,
+      "token_stream_interpreter:WEIRD_BUT_CONSISTENT": 7,
+      "table_driven_matcher:WEIRD_BUT_CONSISTENT": 3,
+      "direct_pattern_walker:STRICT_ASCII": 3,
+      "recursive_descent:STRICT_ASCII": 3,
+      "table_driven_matcher:PERMISSIVE_REGEX": 4,
+      "recursive_descent:PERMISSIVE_REGEX": 1,
+      "compiled_instruction_vm:STRICT_ASCII": 4,
+      "token_stream_interpreter:STRICT_ASCII": 1,
+      "direct_pattern_walker:RANDOM_MUTANT": 5,
+      "table_driven_matcher:LEGACY_ENGINE": 1,
+      "finite_state_machine:UNIX_STYLE": 1,
+      "table_driven_matcher:STRICT_ASCII": 2,
+      "compiled_instruction_vm:PERMISSIVE_REGEX": 1,
+      "compiled_instruction_vm:LEGACY_ENGINE": 1,
+      "token_stream_interpreter:PERMISSIVE_REGEX": 1,
+      "token_stream_interpreter:RANDOM_MUTANT": 1,
+      "recursive_descent:RANDOM_MUTANT": 1
+    }
+  },
+  {
+    "generation": "generation_3",
+    "families": {
+      "finite_state_machine": 25,
+      "direct_pattern_walker": 15,
+      "compiled_instruction_vm": 20,
+      "token_stream_interpreter": 10,
+      "table_driven_matcher": 9,
+      "recursive_descent": 1
+    },
+    "constitutions": {
+      "UNIX_STYLE": 3,
+      "PERMISSIVE_REGEX": 9,
+      "RANDOM_MUTANT": 23,
+      "WEIRD_BUT_CONSISTENT": 36,
+      "STRICT_ASCII": 7,
+      "LEGACY_ENGINE": 2
+    },
+    "adversaries": {
+      "cooperator": 3,
+      "none": 68,
+      "exploiter": 3,
+      "mimic": 3,
+      "poisoner": 3
+    },
+    "species": {
+      "finite_state_machine:UNIX_STYLE": 2,
+      "direct_pattern_walker:PERMISSIVE_REGEX": 2,
+      "compiled_instruction_vm:RANDOM_MUTANT": 5,
+      "token_stream_interpreter:RANDOM_MUTANT": 1,
+      "finite_state_machine:RANDOM_MUTANT": 8,
+      "compiled_instruction_vm:WEIRD_BUT_CONSISTENT": 12,
+      "table_driven_matcher:RANDOM_MUTANT": 3,
+      "finite_state_machine:WEIRD_BUT_CONSISTENT": 9,
+      "token_stream_interpreter:WEIRD_BUT_CONSISTENT": 9,
+      "direct_pattern_walker:WEIRD_BUT_CONSISTENT": 4,
+      "table_driven_matcher:STRICT_ASCII": 2,
+      "direct_pattern_walker:UNIX_STYLE": 1,
+      "finite_state_machine:PERMISSIVE_REGEX": 5,
+      "compiled_instruction_vm:LEGACY_ENGINE": 2,
+      "table_driven_matcher:WEIRD_BUT_CONSISTENT": 2,
+      "direct_pattern_walker:STRICT_ASCII": 2,
+      "recursive_descent:STRICT_ASCII": 1,
+      "compiled_instruction_vm:STRICT_ASCII": 1,
+      "direct_pattern_walker:RANDOM_MUTANT": 6,
+      "table_driven_matcher:PERMISSIVE_REGEX": 2,
+      "finite_state_machine:STRICT_ASCII": 1
+    }
+  },
+  {
+    "generation": "generation_4",
+    "families": {
+      "finite_state_machine": 23,
+      "table_driven_matcher": 16,
+      "compiled_instruction_vm": 24,
+      "token_stream_interpreter": 9,
+      "direct_pattern_walker": 8
+    },
+    "constitutions": {
+      "UNIX_STYLE": 2,
+      "RANDOM_MUTANT": 31,
+      "WEIRD_BUT_CONSISTENT": 40,
+      "PERMISSIVE_REGEX": 5,
+      "STRICT_ASCII": 2
+    },
+    "adversaries": {
+      "cooperator": 4,
+      "none": 70,
+      "exploiter": 1,
+      "mimic": 4,
+      "poisoner": 1
+    },
+    "species": {
+      "finite_state_machine:UNIX_STYLE": 2,
+      "table_driven_matcher:RANDOM_MUTANT": 9,
+      "table_driven_matcher:WEIRD_BUT_CONSISTENT": 4,
+      "compiled_instruction_vm:WEIRD_BUT_CONSISTENT": 14,
+      "finite_state_machine:WEIRD_BUT_CONSISTENT": 11,
+      "compiled_instruction_vm:RANDOM_MUTANT": 9,
+      "table_driven_matcher:PERMISSIVE_REGEX": 2,
+      "token_stream_interpreter:WEIRD_BUT_CONSISTENT": 8,
+      "finite_state_machine:RANDOM_MUTANT": 9,
+      "table_driven_matcher:STRICT_ASCII": 1,
+      "direct_pattern_walker:WEIRD_BUT_CONSISTENT": 3,
+      "token_stream_interpreter:RANDOM_MUTANT": 1,
+      "direct_pattern_walker:STRICT_ASCII": 1,
+      "direct_pattern_walker:RANDOM_MUTANT": 3,
+      "direct_pattern_walker:PERMISSIVE_REGEX": 1,
+      "finite_state_machine:PERMISSIVE_REGEX": 1,
+      "compiled_instruction_vm:PERMISSIVE_REGEX": 1
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "generation": 2,
+    "event": "edge_case_injection"
+  },
+  {
+    "generation": 3,
+    "event": "geography_shuffle"
+  },
+  {
+    "generation": 4,
+    "event": "adversarial_distribution_shift"
+  }
+]

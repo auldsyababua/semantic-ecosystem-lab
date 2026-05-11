@@ -1,0 +1,876 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Semantic Ecosystem Dashboard</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; line-height: 1.45; color: #17211d; }
+table { border-collapse: collapse; width: 100%; max-width: 980px; }
+th, td { border: 1px solid #cad6d0; padding: 6px 8px; text-align: left; }
+th { background: #edf3f0; }
+section { margin: 24px 0; }
+pre { max-height: 360px; overflow: auto; background: #f6f8f7; padding: 10px; border: 1px solid #dbe4df; }
+.layers label { display: inline-block; margin-right: 12px; }
+#layer-camps:not(:checked) ~ .camp-layer,
+#layer-species:not(:checked) ~ .species-layer,
+#layer-topology:not(:checked) ~ .topology-layer,
+#layer-validation:not(:checked) ~ .validation-layer { display: none; }
+</style>
+</head>
+<body>
+<h1>Oracle-Free Semantic Ecosystem Dashboard</h1>
+<section class="layers">
+<input id="layer-camps" type="checkbox" checked><label for="layer-camps">Camps</label>
+<input id="layer-species" type="checkbox" checked><label for="layer-species">Species</label>
+<input id="layer-topology" type="checkbox" checked><label for="layer-topology">Topology</label>
+<input id="layer-validation" type="checkbox" checked><label for="layer-validation">Validation</label>
+<div>
+<h2>Metrics</h2>
+<table><tr><th>Gen</th><th>Camps</th><th>Constitution Diversity</th><th>Entropy</th><th>False Consensus Freq</th><th>Adversarial Influence</th></tr><tr><td>generation_0</td><td>6</td><td>6</td><td>0.4887</td><td>0.00</td><td>0.11</td></tr><tr><td>generation_1</td><td>9</td><td>6</td><td>0.4042</td><td>0.00</td><td>0.17</td></tr><tr><td>generation_2</td><td>12</td><td>6</td><td>0.3647</td><td>0.33</td><td>0.17</td></tr><tr><td>generation_3</td><td>7</td><td>6</td><td>0.2450</td><td>0.50</td><td>0.14</td></tr><tr><td>generation_4</td><td>6</td><td>5</td><td>0.1759</td><td>0.60</td><td>0.13</td></tr></table>
+<h2>Entropy Curve</h2>
+<svg width="360" height="220" style="border:1px solid #cad6d0"><rect x='20' y='40' width='35' height='140' fill='#2f7d68'/><text x='22' y='198' font-size='9'>g0</text><rect x='75' y='65' width='35' height='115' fill='#2f7d68'/><text x='77' y='198' font-size='9'>g1</text><rect x='130' y='76' width='35' height='104' fill='#2f7d68'/><text x='132' y='198' font-size='9'>g2</text><rect x='185' y='110' width='35' height='70' fill='#2f7d68'/><text x='187' y='198' font-size='9'>g3</text><rect x='240' y='130' width='35' height='50' fill='#2f7d68'/><text x='242' y='198' font-size='9'>g4</text></svg>
+</div>
+<section class="camp-layer"><h2>Camp Timeline</h2><details><summary>generation_0: 6 camps</summary><table><tr><th>Camp</th><th>Size</th><th>Constitution Mix</th></tr><tr><td>camp_0</td><td>25</td><td>{&quot;PERMISSIVE_REGEX&quot;: 11, &quot;RANDOM_MUTANT&quot;: 14}</td></tr><tr><td>camp_1</td><td>11</td><td>{&quot;LEGACY_ENGINE&quot;: 11}</td></tr><tr><td>camp_2</td><td>34</td><td>{&quot;STRICT_ASCII&quot;: 19, &quot;UNIX_STYLE&quot;: 15}</td></tr><tr><td>camp_3</td><td>7</td><td>{&quot;WEIRD_BUT_CONSISTENT&quot;: 7}</td></tr><tr><td>camp_4</td><td>1</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1}</td></tr><tr><td>camp_5</td><td>2</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 1}</td></tr></table></details><details><summary>generation_1: 9 camps</summary><table><tr><th>Camp</th><th>Size</th><th>Constitution Mix</th></tr><tr><td>camp_0</td><td>39</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 4, &quot;STRICT_ASCII&quot;: 20, &quot;UNIX_STYLE&quot;: 13, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_1</td><td>17</td><td>{&quot;RANDOM_MUTANT&quot;: 3, &quot;STRICT_ASCII&quot;: 2, &quot;UNIX_STYLE&quot;: 3, &quot;WEIRD_BUT_CONSISTENT&quot;: 9}</td></tr><tr><td>camp_2</td><td>11</td><td>{&quot;PERMISSIVE_REGEX&quot;: 6, &quot;RANDOM_MUTANT&quot;: 4, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_3</td><td>3</td><td>{&quot;LEGACY_ENGINE&quot;: 2, &quot;PERMISSIVE_REGEX&quot;: 1}</td></tr><tr><td>camp_4</td><td>5</td><td>{&quot;RANDOM_MUTANT&quot;: 2, &quot;STRICT_ASCII&quot;: 2, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_5</td><td>7</td><td>{&quot;STRICT_ASCII&quot;: 2, &quot;UNIX_STYLE&quot;: 3, &quot;WEIRD_BUT_CONSISTENT&quot;: 2}</td></tr><tr><td>camp_6</td><td>4</td><td>{&quot;PERMISSIVE_REGEX&quot;: 2, &quot;UNIX_STYLE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_7</td><td>4</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 1, &quot;UNIX_STYLE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_8</td><td>1</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1}</td></tr></table></details><details><summary>generation_2: 12 camps</summary><table><tr><th>Camp</th><th>Size</th><th>Constitution Mix</th></tr><tr><td>camp_0</td><td>29</td><td>{&quot;PERMISSIVE_REGEX&quot;: 3, &quot;RANDOM_MUTANT&quot;: 7, &quot;STRICT_ASCII&quot;: 3, &quot;UNIX_STYLE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 15}</td></tr><tr><td>camp_1</td><td>11</td><td>{&quot;LEGACY_ENGINE&quot;: 1, &quot;PERMISSIVE_REGEX&quot;: 6, &quot;RANDOM_MUTANT&quot;: 3, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_2</td><td>15</td><td>{&quot;PERMISSIVE_REGEX&quot;: 2, &quot;RANDOM_MUTANT&quot;: 2, &quot;STRICT_ASCII&quot;: 3, &quot;UNIX_STYLE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 7}</td></tr><tr><td>camp_3</td><td>30</td><td>{&quot;RANDOM_MUTANT&quot;: 5, &quot;STRICT_ASCII&quot;: 6, &quot;UNIX_STYLE&quot;: 3, &quot;WEIRD_BUT_CONSISTENT&quot;: 16}</td></tr><tr><td>camp_4</td><td>5</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 1, &quot;STRICT_ASCII&quot;: 2, &quot;UNIX_STYLE&quot;: 1}</td></tr><tr><td>camp_5</td><td>7</td><td>{&quot;PERMISSIVE_REGEX&quot;: 2, &quot;RANDOM_MUTANT&quot;: 1, &quot;STRICT_ASCII&quot;: 2, &quot;UNIX_STYLE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_6</td><td>5</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 1, &quot;STRICT_ASCII&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 2}</td></tr><tr><td>camp_7</td><td>3</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;STRICT_ASCII&quot;: 2}</td></tr><tr><td>camp_8</td><td>1</td><td>{&quot;LEGACY_ENGINE&quot;: 1}</td></tr><tr><td>camp_9</td><td>1</td><td>{&quot;STRICT_ASCII&quot;: 1}</td></tr><tr><td>camp_10</td><td>5</td><td>{&quot;RANDOM_MUTANT&quot;: 2, &quot;STRICT_ASCII&quot;: 3}</td></tr><tr><td>camp_11</td><td>13</td><td>{&quot;PERMISSIVE_REGEX&quot;: 2, &quot;RANDOM_MUTANT&quot;: 3, &quot;STRICT_ASCII&quot;: 2, &quot;WEIRD_BUT_CONSISTENT&quot;: 6}</td></tr></table></details><details><summary>generation_3: 7 camps</summary><table><tr><th>Camp</th><th>Size</th><th>Constitution Mix</th></tr><tr><td>camp_0</td><td>21</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 8, &quot;STRICT_ASCII&quot;: 4, &quot;UNIX_STYLE&quot;: 3, &quot;WEIRD_BUT_CONSISTENT&quot;: 5}</td></tr><tr><td>camp_1</td><td>23</td><td>{&quot;PERMISSIVE_REGEX&quot;: 6, &quot;RANDOM_MUTANT&quot;: 8, &quot;WEIRD_BUT_CONSISTENT&quot;: 9}</td></tr><tr><td>camp_2</td><td>44</td><td>{&quot;PERMISSIVE_REGEX&quot;: 5, &quot;RANDOM_MUTANT&quot;: 11, &quot;STRICT_ASCII&quot;: 3, &quot;UNIX_STYLE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 24}</td></tr><tr><td>camp_3</td><td>4</td><td>{&quot;LEGACY_ENGINE&quot;: 1, &quot;RANDOM_MUTANT&quot;: 2, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_4</td><td>14</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 6, &quot;STRICT_ASCII&quot;: 2, &quot;WEIRD_BUT_CONSISTENT&quot;: 5}</td></tr><tr><td>camp_5</td><td>3</td><td>{&quot;RANDOM_MUTANT&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 2}</td></tr><tr><td>camp_6</td><td>2</td><td>{&quot;LEGACY_ENGINE&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr></table></details><details><summary>generation_4: 6 camps</summary><table><tr><th>Camp</th><th>Size</th><th>Constitution Mix</th></tr><tr><td>camp_0</td><td>20</td><td>{&quot;PERMISSIVE_REGEX&quot;: 2, &quot;RANDOM_MUTANT&quot;: 7, &quot;STRICT_ASCII&quot;: 1, &quot;UNIX_STYLE&quot;: 2, &quot;WEIRD_BUT_CONSISTENT&quot;: 8}</td></tr><tr><td>camp_1</td><td>62</td><td>{&quot;PERMISSIVE_REGEX&quot;: 3, &quot;RANDOM_MUTANT&quot;: 25, &quot;STRICT_ASCII&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 33}</td></tr><tr><td>camp_2</td><td>17</td><td>{&quot;PERMISSIVE_REGEX&quot;: 2, &quot;RANDOM_MUTANT&quot;: 5, &quot;WEIRD_BUT_CONSISTENT&quot;: 10}</td></tr><tr><td>camp_3</td><td>2</td><td>{&quot;RANDOM_MUTANT&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_4</td><td>3</td><td>{&quot;PERMISSIVE_REGEX&quot;: 1, &quot;RANDOM_MUTANT&quot;: 1, &quot;WEIRD_BUT_CONSISTENT&quot;: 1}</td></tr><tr><td>camp_5</td><td>1</td><td>{&quot;RANDOM_MUTANT&quot;: 1}</td></tr></table></details></section>
+<section class="species-layer"><h2>Species Timeline</h2><details><summary>generation_0</summary><pre>{
+  &quot;adversaries&quot;: {
+    &quot;cooperator&quot;: 1,
+    &quot;exploiter&quot;: 2,
+    &quot;mimic&quot;: 5,
+    &quot;none&quot;: 70,
+    &quot;poisoner&quot;: 2
+  },
+  &quot;constitutions&quot;: {
+    &quot;LEGACY_ENGINE&quot;: 11,
+    &quot;PERMISSIVE_REGEX&quot;: 13,
+    &quot;RANDOM_MUTANT&quot;: 15,
+    &quot;STRICT_ASCII&quot;: 19,
+    &quot;UNIX_STYLE&quot;: 15,
+    &quot;WEIRD_BUT_CONSISTENT&quot;: 7
+  },
+  &quot;families&quot;: {
+    &quot;compiled_instruction_vm&quot;: 11,
+    &quot;direct_pattern_walker&quot;: 16,
+    &quot;finite_state_machine&quot;: 13,
+    &quot;recursive_descent&quot;: 11,
+    &quot;table_driven_matcher&quot;: 21,
+    &quot;token_stream_interpreter&quot;: 8
+  }
+}</pre></details><details><summary>generation_1</summary><pre>{
+  &quot;adversaries&quot;: {
+    &quot;cooperator&quot;: 1,
+    &quot;exploiter&quot;: 6,
+    &quot;mimic&quot;: 4,
+    &quot;none&quot;: 67,
+    &quot;poisoner&quot;: 2
+  },
+  &quot;constitutions&quot;: {
+    &quot;LEGACY_ENGINE&quot;: 2,
+    &quot;PERMISSIVE_REGEX&quot;: 11,
+    &quot;RANDOM_MUTANT&quot;: 12,
+    &quot;STRICT_ASCII&quot;: 24,
+    &quot;UNIX_STYLE&quot;: 17,
+    &quot;WEIRD_BUT_CONSISTENT&quot;: 14
+  },
+  &quot;families&quot;: {
+    &quot;compiled_instruction_vm&quot;: 14,
+    &quot;direct_pattern_walker&quot;: 26,
+    &quot;finite_state_machine&quot;: 11,
+    &quot;recursive_descent&quot;: 10,
+    &quot;table_driven_matcher&quot;: 12,
+    &quot;token_stream_interpreter&quot;: 7
+  }
+}</pre></details><details><summary>generation_2</summary><pre>{
+  &quot;adversaries&quot;: {
+    &quot;cooperator&quot;: 1,
+    &quot;exploiter&quot;: 7,
+    &quot;mimic&quot;: 3,
+    &quot;none&quot;: 67,
+    &quot;poisoner&quot;: 2
+  },
+  &quot;constitutions&quot;: {
+    &quot;LEGACY_ENGINE&quot;: 2,
+    &quot;PERMISSIVE_REGEX&quot;: 15,
+    &quot;RANDOM_MUTANT&quot;: 18,
+    &quot;STRICT_ASCII&quot;: 13,
+    &quot;UNIX_STYLE&quot;: 5,
+    &quot;WEIRD_BUT_CONSISTENT&quot;: 27
+  },
+  &quot;families&quot;: {
+    &quot;compiled_instruction_vm&quot;: 18,
+    &quot;direct_pattern_walker&quot;: 18,
+    &quot;finite_state_machine&quot;: 16,
+    &quot;recursive_descent&quot;: 5,
+    &quot;table_driven_matcher&quot;: 13,
+    &quot;token_stream_interpreter&quot;: 10
+  }
+}</pre></details><details><summary>generation_3</summary><pre>{
+  &quot;adversaries&quot;: {
+    &quot;cooperator&quot;: 3,
+    &quot;exploiter&quot;: 3,
+    &quot;mimic&quot;: 3,
+    &quot;none&quot;: 68,
+    &quot;poisoner&quot;: 3
+  },
+  &quot;constitutions&quot;: {
+    &quot;LEGACY_ENGINE&quot;: 2,
+    &quot;PERMISSIVE_REGEX&quot;: 9,
+    &quot;RANDOM_MUTANT&quot;: 23,
+    &quot;STRICT_ASCII&quot;: 7,
+    &quot;UNIX_STYLE&quot;: 3,
+    &quot;WEIRD_BUT_CONSISTENT&quot;: 36
+  },
+  &quot;families&quot;: {
+    &quot;compiled_instruction_vm&quot;: 20,
+    &quot;direct_pattern_walker&quot;: 15,
+    &quot;finite_state_machine&quot;: 25,
+    &quot;recursive_descent&quot;: 1,
+    &quot;table_driven_matcher&quot;: 9,
+    &quot;token_stream_interpreter&quot;: 10
+  }
+}</pre></details><details><summary>generation_4</summary><pre>{
+  &quot;adversaries&quot;: {
+    &quot;cooperator&quot;: 4,
+    &quot;exploiter&quot;: 1,
+    &quot;mimic&quot;: 4,
+    &quot;none&quot;: 70,
+    &quot;poisoner&quot;: 1
+  },
+  &quot;constitutions&quot;: {
+    &quot;PERMISSIVE_REGEX&quot;: 5,
+    &quot;RANDOM_MUTANT&quot;: 31,
+    &quot;STRICT_ASCII&quot;: 2,
+    &quot;UNIX_STYLE&quot;: 2,
+    &quot;WEIRD_BUT_CONSISTENT&quot;: 40
+  },
+  &quot;families&quot;: {
+    &quot;compiled_instruction_vm&quot;: 24,
+    &quot;direct_pattern_walker&quot;: 8,
+    &quot;finite_state_machine&quot;: 23,
+    &quot;table_driven_matcher&quot;: 16,
+    &quot;token_stream_interpreter&quot;: 9
+  }
+}</pre></details></section>
+<section class="topology-layer"><h2>Geography And Topology</h2><details><summary>generation_0: density 0.0291</summary><p>nodes=80, edges=92, radius=2</p></details><details><summary>generation_1: density 0.0263</summary><p>nodes=80, edges=83, radius=2</p></details><details><summary>generation_2: density 0.0320</summary><p>nodes=80, edges=101, radius=2</p></details><details><summary>generation_3: density 0.0259</summary><p>nodes=80, edges=82, radius=2</p></details><details><summary>generation_4: density 0.0288</summary><p>nodes=80, edges=91, radius=2</p></details></section>
+<section class="topology-layer"><h2>Geography Heatmaps</h2><details><summary>generation_0: 20x20</summary><pre>0 0 0 0 1 0 0 0 0 1 0 1 0 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 0 0 0 2
+0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 1
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0
+0 0 1 0 0 0 0 0 1 1 0 0 0 1 0 0 2 0 0 0
+0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+1 0 0 0 0 0 1 0 0 0 1 0 0 3 0 0 0 0 0 0
+0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1
+0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 1 1 1 0 1 0 0 1 0 0 0 0 1 1
+0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0
+0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1
+1 0 0 1 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0
+0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0
+1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0</pre></details><details><summary>generation_1: 20x20</summary><pre>0 0 0 0 2 1 0 0 0 0 0 0 0 3 0 0 1 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 2
+0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1
+0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0
+1 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 1 0 0 0
+0 0 0 0 0 0 0 2 0 1 0 0 1 0 0 0 0 1 0 0
+0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+0 0 1 0 0 0 1 0 0 0 0 0 0 2 0 0 0 0 0 0
+0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0
+0 0 0 0 1 1 0 0 0 0 2 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1 0 0 1 1 0 1 1 0 0 0 0 1
+0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+0 1 0 1 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 2
+1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 1 0 1 0 0 0 0 0 0 0 0 2 0 0 0 0 1 0
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0</pre></details><details><summary>generation_2: 20x20</summary><pre>0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0
+1 0 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0
+0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 1
+0 0 0 0 1 0 0 0 0 0 1 1 0 1 0 0 0 1 0 1
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0
+1 0 0 1 1 2 0 0 0 0 0 0 0 0 0 1 2 0 0 0
+0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 1 1 0 0 0
+0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 0 0 0 1
+0 0 1 0 2 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0
+0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 2
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0 0 0 0 0 0 3 0 0 0 0 1 0
+0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 0 1</pre></details><details><summary>generation_3: 20x20</summary><pre>0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0
+0 0 0 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0 1 0 0 2 0 0 1 0 0 0
+0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 0 0
+0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 1
+0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+0 1 0 1 2 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 1
+0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 2 0 0 1 1 1 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+1 1 0 0 0 0 1 1 1 0 1 0 0 0 0 2 0 0 0 0
+0 1 0 0 2 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0
+0 0 0 0 0 0 2 1 0 0 0 1 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0
+0 2 0 1 0 0 0 1 0 0 0 2 0 0 0 0 0 0 0 1</pre></details><details><summary>generation_4: 20x20</summary><pre>0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 1 0 1 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 1 0 0 1
+0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0
+0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0
+1 1 1 0 0 1 0 0 0 0 1 0 2 0 1 1 1 0 0 1
+0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0
+0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 2 1 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 1 1 1
+0 0 0 2 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 0 1
+1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+0 0 1 1 0 0 0 1 0 0 1 0 0 0 0 1 1 0 0 0
+0 1 0 0 2 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0
+0 0 0 0 0 0 2 1 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</pre></details></section>
+<section class="camp-layer"><h2>Semantic Distance Matrices</h2><details><summary>generation_0: 6 camps</summary><pre>{
+  &quot;generation&quot;: &quot;generation_0&quot;,
+  &quot;camp_ids&quot;: [
+    &quot;camp_0&quot;,
+    &quot;camp_1&quot;,
+    &quot;camp_2&quot;,
+    &quot;camp_3&quot;,
+    &quot;camp_4&quot;,
+    &quot;camp_5&quot;
+  ],
+  &quot;distance&quot;: [
+    [
+      0.0,
+      0.22908366533864544,
+      0.4462151394422311,
+      0.2121513944223108,
+      0.2649402390438247,
+      0.16633466135458164
+    ],
+    [
+      0.22908366533864544,
+      0.0,
+      0.2211155378486056,
+      0.3276892430278885,
+      0.42430278884462147,
+      0.34760956175298807
+    ],
+    [
+      0.4462151394422311,
+      0.2211155378486056,
+      0.0,
+      0.26593625498007967,
+      0.6125498007968128,
+      0.48904382470119523
+    ],
+    [
+      0.2121513944223108,
+      0.3276892430278885,
+      0.26593625498007967,
+      0.0,
+      0.4571713147410359,
+      0.3545816733067729
+    ],
+    [
+      0.2649402390438247,
+      0.42430278884462147,
+      0.6125498007968128,
+      0.4571713147410359,
+      0.0,
+      0.34462151394422313
+    ],
+    [
+      0.16633466135458164,
+      0.34760956175298807,
+      0.48904382470119523,
+      0.3545816733067729,
+      0.34462151394422313,
+      0.0
+    ]
+  ]
+}</pre></details><details><summary>generation_1: 9 camps</summary><pre>{
+  &quot;generation&quot;: &quot;generation_1&quot;,
+  &quot;camp_ids&quot;: [
+    &quot;camp_0&quot;,
+    &quot;camp_1&quot;,
+    &quot;camp_2&quot;,
+    &quot;camp_3&quot;,
+    &quot;camp_4&quot;,
+    &quot;camp_5&quot;,
+    &quot;camp_6&quot;,
+    &quot;camp_7&quot;,
+    &quot;camp_8&quot;
+  ],
+  &quot;distance&quot;: [
+    [
+      0.0,
+      0.26593625498007967,
+      0.398406374501992,
+      0.2211155378486056,
+      0.08366533864541836,
+      0.18027888446215135,
+      0.2838645418326693,
+      0.3426294820717132,
+      0.33964143426294824
+    ],
+    [
+      0.26593625498007967,
+      0.0,
+      0.2400398406374502,
+      0.3276892430278885,
+      0.1822709163346613,
+      0.08565737051792832,
+      0.10956175298804782,
+      0.1882470119521913,
+      0.18127490039840632
+    ],
+    [
+      0.398406374501992,
+      0.2400398406374502,
+      0.0,
+      0.25697211155378485,
+      0.40637450199203184,
+      0.23406374501992033,
+      0.21015936254980083,
+      0.07569721115537853,
+      0.1583665338645418
+    ],
+    [
+      0.2211155378486056,
+      0.3276892430278885,
+      0.25697211155378485,
+      0.0,
+      0.149402390438247,
+      0.40139442231075695,
+      0.3715139442231076,
+      0.2589641434262948,
+      0.26195219123505975
+    ],
+    [
+      0.08366533864541836,
+      0.1822709163346613,
+      0.40637450199203184,
+      0.149402390438247,
+      0.0,
+      0.2639442231075697,
+      0.2878486055776892,
+      0.350597609561753,
+      0.34362549800796816
+    ],
+    [
+      0.18027888446215135,
+      0.08565737051792832,
+      0.23406374501992033,
+      0.40139442231075695,
+      0.2639442231075697,
+      0.0,
+      0.10358565737051795,
+      0.1782868525896414,
+      0.17529880478087645
+    ],
+    [
+      0.2838645418326693,
+      0.10956175298804782,
+      0.21015936254980083,
+      0.3715139442231076,
+      0.2878486055776892,
+      0.10358565737051795,
+      0.0,
+      0.28187250996015933,
+      0.19920318725099606
+    ],
+    [
+      0.3426294820717132,
+      0.1882470119521913,
+      0.07569721115537853,
+      0.2589641434262948,
+      0.350597609561753,
+      0.1782868525896414,
+      0.28187250996015933,
+      0.0,
+      0.08266932270916338
+    ],
+    [
+      0.33964143426294824,
+      0.18127490039840632,
+      0.1583665338645418,
+      0.26195219123505975,
+      0.34362549800796816,
+      0.17529880478087645,
+      0.19920318725099606,
+      0.08266932270916338,
+      0.0
+    ]
+  ]
+}</pre></details><details><summary>generation_2: 12 camps</summary><pre>{
+  &quot;generation&quot;: &quot;generation_2&quot;,
+  &quot;camp_ids&quot;: [
+    &quot;camp_0&quot;,
+    &quot;camp_1&quot;,
+    &quot;camp_2&quot;,
+    &quot;camp_3&quot;,
+    &quot;camp_4&quot;,
+    &quot;camp_5&quot;,
+    &quot;camp_6&quot;,
+    &quot;camp_7&quot;,
+    &quot;camp_8&quot;,
+    &quot;camp_9&quot;,
+    &quot;camp_10&quot;,
+    &quot;camp_11&quot;
+  ],
+  &quot;distance&quot;: [
+    [
+      0.0,
+      0.1469712015888779,
+      0.08341608738828199,
+      0.10625620655412116,
+      0.2512413108242304,
+      0.32770605759682225,
+      0.2462760675273088,
+      0.24428997020854026,
+      0.33763654419066536,
+      0.41608738828202585,
+      0.21946375372393245,
+      0.10625620655412116
+    ],
+    [
+      0.1469712015888779,
+      0.0,
+      0.22045680238331677,
+      0.24925521350546176,
+      0.10427010923535251,
+      0.448857994041708,
+      0.3733862959285005,
+      0.10724925521350548,
+      0.23038728897715988,
+      0.2850049652432969,
+      0.08242303872889767,
+      0.24329692154915594
+    ],
+    [
+      0.08341608738828199,
+      0.22045680238331677,
+      0.0,
+      0.1082423038728898,
+      0.24329692154915594,
+      0.24428997020854026,
+      0.3296921549155909,
+      0.24031777557100298,
+      0.4091360476663356,
+      0.4081429990069514,
+      0.1380337636544191,
+      0.10427010923535251
+    ],
+    [
+      0.10625620655412116,
+      0.24925521350546176,
+      0.1082423038728898,
+      0.0,
+      0.14498510427010924,
+      0.22542204568023838,
+      0.2214498510427011,
+      0.2174776564051638,
+      0.368421052631579,
+      0.3098311817279047,
+      0.24230387288977162,
+      0.08540218470705063
+    ],
+    [
+      0.2512413108242304,
+      0.10427010923535251,
+      0.24329692154915594,
+      0.14498510427010924,
+      0.0,
+      0.3445878848063555,
+      0.3505461767626614,
+      0.08242303872889767,
+      0.25918570009930486,
+      0.18073485600794437,
+      0.10724925521350548,
+      0.22045680238331677
+    ],
+    [
+      0.32770605759682225,
+      0.448857994041708,
+      0.24428997020854026,
+      0.22542204568023838,
+      0.3445878848063555,
+      0.0,
+      0.08540218470705063,
+      0.34160873882820253,
+      0.21847070506454813,
+      0.16385302879841113,
+      0.36643495531281034,
+      0.2214498510427011
+    ],
+    [
+      0.2462760675273088,
+      0.3733862959285005,
+      0.3296921549155909,
+      0.2214498510427011,
+      0.3505461767626614,
+      0.08540218470705063,
+      0.0,
+      0.34359483614697117,
+      0.14895729890764653,
+      0.16981132075471694,
+      0.44587884806355516,
+      0.22542204568023838
+    ],
+    [
+      0.24428997020854026,
+      0.10724925521350548,
+      0.24031777557100298,
+      0.2174776564051638,
+      0.08242303872889767,
+      0.34160873882820253,
+      0.34359483614697117,
+      0.0,
+      0.2621648460774578,
+      0.26315789473684215,
+      0.10427010923535251,
+      0.1380337636544191
+    ],
+    [
+      0.33763654419066536,
+      0.23038728897715988,
+      0.4091360476663356,
+      0.368421052631579,
+      0.25918570009930486,
+      0.21847070506454813,
+      0.14895729890764653,
+      0.2621648460774578,
+      0.0,
+      0.0784508440913605,
+      0.31281032770605754,
+      0.3604766633565045
+    ],
+    [
+      0.41608738828202585,
+      0.2850049652432969,
+      0.4081429990069514,
+      0.3098311817279047,
+      0.18073485600794437,
+      0.16385302879841113,
+      0.16981132075471694,
+      0.26315789473684215,
+      0.0784508440913605,
+      0.0,
+      0.28798411122144985,
+      0.3853028798411122
+    ],
+    [
+      0.21946375372393245,
+      0.08242303872889767,
+      0.1380337636544191,
+      0.24230387288977162,
+      0.10724925521350548,
+      0.36643495531281034,
+      0.44587884806355516,
+      0.10427010923535251,
+      0.31281032770605754,
+      0.28798411122144985,
+      0.0,
+      0.24031777557100298
+    ],
+    [
+      0.10625620655412116,
+      0.24329692154915594,
+      0.10427010923535251,
+      0.08540218470705063,
+      0.22045680238331677,
+      0.2214498510427011,
+      0.22542204568023838,
+      0.1380337636544191,
+      0.3604766633565045,
+      0.3853028798411122,
+      0.24031777557100298,
+      0.0
+    ]
+  ]
+}</pre></details><details><summary>generation_3: 7 camps</summary><pre>{
+  &quot;generation&quot;: &quot;generation_3&quot;,
+  &quot;camp_ids&quot;: [
+    &quot;camp_0&quot;,
+    &quot;camp_1&quot;,
+    &quot;camp_2&quot;,
+    &quot;camp_3&quot;,
+    &quot;camp_4&quot;,
+    &quot;camp_5&quot;,
+    &quot;camp_6&quot;
+  ],
+  &quot;distance&quot;: [
+    [
+      0.0,
+      0.08540218470705063,
+      0.10427010923535251,
+      0.17576961271102287,
+      0.10724925521350548,
+      0.2850049652432969,
+      0.3634558093346574
+    ],
+    [
+      0.08540218470705063,
+      0.0,
+      0.1082423038728898,
+      0.16981132075471694,
+      0.10526315789473684,
+      0.28897715988083417,
+      0.4389275074478649
+    ],
+    [
+      0.10427010923535251,
+      0.1082423038728898,
+      0.0,
+      0.19860973187686193,
+      0.08242303872889767,
+      0.18073485600794437,
+      0.3406156901688183
+    ],
+    [
+      0.17576961271102287,
+      0.16981132075471694,
+      0.19860973187686193,
+      0.0,
+      0.2711022840119166,
+      0.3634558093346574,
+      0.2850049652432969
+    ],
+    [
+      0.10724925521350548,
+      0.10526315789473684,
+      0.08242303872889767,
+      0.2711022840119166,
+      0.0,
+      0.26315789473684215,
+      0.33366434955312807
+    ],
+    [
+      0.2850049652432969,
+      0.28897715988083417,
+      0.18073485600794437,
+      0.3634558093346574,
+      0.26315789473684215,
+      0.0,
+      0.15988083416087384
+    ],
+    [
+      0.3634558093346574,
+      0.4389275074478649,
+      0.3406156901688183,
+      0.2850049652432969,
+      0.33366434955312807,
+      0.15988083416087384,
+      0.0
+    ]
+  ]
+}</pre></details><details><summary>generation_4: 6 camps</summary><pre>{
+  &quot;generation&quot;: &quot;generation_4&quot;,
+  &quot;camp_ids&quot;: [
+    &quot;camp_0&quot;,
+    &quot;camp_1&quot;,
+    &quot;camp_2&quot;,
+    &quot;camp_3&quot;,
+    &quot;camp_4&quot;,
+    &quot;camp_5&quot;
+  ],
+  &quot;distance&quot;: [
+    [
+      0.0,
+      0.10406342913776012,
+      0.08622398414271559,
+      0.28543111992071357,
+      0.23984142715559964,
+      0.20911793855302274
+    ],
+    [
+      0.10406342913776012,
+      0.0,
+      0.1090188305252725,
+      0.18136769078295345,
+      0.1357779980178394,
+      0.23191278493557976
+    ],
+    [
+      0.08622398414271559,
+      0.1090188305252725,
+      0.0,
+      0.28840436075322096,
+      0.23290386521308226,
+      0.12685827552031714
+    ],
+    [
+      0.28543111992071357,
+      0.18136769078295345,
+      0.28840436075322096,
+      0.0,
+      0.2993062438057482,
+      0.3954410307234886
+    ],
+    [
+      0.23984142715559964,
+      0.1357779980178394,
+      0.23290386521308226,
+      0.2993062438057482,
+      0.0,
+      0.10604558969276512
+    ],
+    [
+      0.20911793855302274,
+      0.23191278493557976,
+      0.12685827552031714,
+      0.3954410307234886,
+      0.10604558969276512,
+      0.0
+    ]
+  ]
+}</pre></details></section>
+<section><h2>Phase Transitions</h2><ul><li>{&#x27;generation&#x27;: 2, &#x27;event&#x27;: &#x27;edge_case_injection&#x27;}</li><li>{&#x27;generation&#x27;: 3, &#x27;event&#x27;: &#x27;geography_shuffle&#x27;}</li><li>{&#x27;generation&#x27;: 4, &#x27;event&#x27;: &#x27;adversarial_distribution_shift&#x27;}</li></ul></section>
+<section><h2>False Consensus Events</h2><ul><li>{&#x27;generation&#x27;: 0, &#x27;camp&#x27;: &#x27;camp_2&#x27;, &#x27;size&#x27;: 34, &#x27;drift_cases&#x27;: 0, &#x27;false_consensus&#x27;: False}</li><li>{&#x27;generation&#x27;: 1, &#x27;camp&#x27;: &#x27;camp_0&#x27;, &#x27;size&#x27;: 39, &#x27;drift_cases&#x27;: 0, &#x27;false_consensus&#x27;: False}</li><li>{&#x27;generation&#x27;: 2, &#x27;camp&#x27;: &#x27;camp_3&#x27;, &#x27;size&#x27;: 30, &#x27;drift_cases&#x27;: 58, &#x27;false_consensus&#x27;: True}</li><li>{&#x27;generation&#x27;: 3, &#x27;camp&#x27;: &#x27;camp_2&#x27;, &#x27;size&#x27;: 44, &#x27;drift_cases&#x27;: 58, &#x27;false_consensus&#x27;: True}</li><li>{&#x27;generation&#x27;: 4, &#x27;camp&#x27;: &#x27;camp_1&#x27;, &#x27;size&#x27;: 62, &#x27;drift_cases&#x27;: 58, &#x27;false_consensus&#x27;: True}</li></ul></section>
+<section class="validation-layer"><h2>Metric Validation</h2><pre>{
+  &quot;null_model_comparisons&quot;: [
+    {
+      &quot;generation&quot;: &quot;generation_0&quot;,
+      &quot;camp_count&quot;: 6,
+      &quot;largest_camp&quot;: 34,
+      &quot;null_expected_largest&quot;: 13.333333333333334,
+      &quot;largest_to_null_ratio&quot;: 2.55,
+      &quot;statistically_meaningful_proxy&quot;: true
+    },
+    {
+      &quot;generation&quot;: &quot;generation_1&quot;,
+      &quot;camp_count&quot;: 9,
+      &quot;largest_camp&quot;: 39,
+      &quot;null_expected_largest&quot;: 10.11111111111111,
+      &quot;largest_to_null_ratio&quot;: 3.857142857142857,
+      &quot;statistically_meaningful_proxy&quot;: true
+    },
+    {
+      &quot;generation&quot;: &quot;generation_2&quot;,
+      &quot;camp_count&quot;: 12,
+      &quot;largest_camp&quot;: 30,
+      &quot;null_expected_largest&quot;: 10.416666666666666,
+      &quot;largest_to_null_ratio&quot;: 2.8800000000000003,
+      &quot;statistically_meaningful_proxy&quot;: true
+    },
+    {
+      &quot;generation&quot;: &quot;generation_3&quot;,
+      &quot;camp_count&quot;: 7,
+      &quot;largest_camp&quot;: 44,
+      &quot;null_expected_largest&quot;: 15.857142857142858,
+      &quot;largest_to_null_ratio&quot;: 2.774774774774775,
+      &quot;statistically_meaningful_proxy&quot;: true
+    },
+    {
+      &quot;generation&quot;: &quot;generation_4&quot;,
+      &quot;camp_count&quot;: 6,
+      &quot;largest_camp&quot;: 62,
+      &quot;null_expected_largest&quot;: 17.5,
+      &quot;largest_to_null_ratio&quot;: 3.5428571428571427,
+      &quot;statistically_meaningful_proxy&quot;: true
+    }
+  ],
+  &quot;randomized_baselines&quot;: {
+    &quot;entropy_by_generation&quot;: [
+      2.555343387901185,
+      3.073291496086743,
+      3.372967440529607,
+      2.794144166692866,
+      2.551241422327504
+    ],
+    &quot;mean_entropy&quot;: 2.869397582707581
+  },
+  &quot;entropy_sanity_checks&quot;: {
+    &quot;values&quot;: [
+      0.48872343529660334,
+      0.4041501840069948,
+      0.3647433533748662,
+      0.24498895197573606,
+      0.17594904819747909
+    ],
+    &quot;deltas&quot;: [
+      -0.08457325128960852,
+      -0.03940683063212863,
+      -0.11975440139913013,
+      -0.06903990377825697
+    ],
+    &quot;monotonic_nonincreasing&quot;: true,
+    &quot;nonnegative&quot;: true
+  },
+  &quot;cluster_stability_tests&quot;: [
+    {
+      &quot;generation&quot;: &quot;generation_1&quot;,
+      &quot;dominant_jaccard_vs_previous&quot;: 0.4897959183673469
+    },
+    {
+      &quot;generation&quot;: &quot;generation_2&quot;,
+      &quot;dominant_jaccard_vs_previous&quot;: 0.0
+    },
+    {
+      &quot;generation&quot;: &quot;generation_3&quot;,
+      &quot;dominant_jaccard_vs_previous&quot;: 0.34545454545454546
+    },
+    {
+      &quot;generation&quot;: &quot;generation_4&quot;,
+      &quot;dominant_jaccard_vs_previous&quot;: 0.41333333333333333
+    }
+  ],
+  &quot;topology_sensitivity_analysis&quot;: {
+    &quot;density_by_generation&quot;: [
+      0.02911392405063291,
+      0.026265822784810128,
+      0.03196202531645569,
+      0.025949367088607594,
+      0.02879746835443038
+    ],
+    &quot;mean_density&quot;: 0.028417721518987343,
+    &quot;range&quot;: 0.006012658227848099
+  },
+  &quot;false_consensus_robustness&quot;: {
+    &quot;event_count&quot;: 5,
+    &quot;robust_events&quot;: 3,
+    &quot;max_drift_cases&quot;: 58,
+    &quot;dominant_camps&quot;: [
+      &quot;camp_0&quot;,
+      &quot;camp_1&quot;,
+      &quot;camp_2&quot;,
+      &quot;camp_3&quot;
+    ]
+  },
+  &quot;phase_transition_summary&quot;: {
+    &quot;event_count&quot;: 3,
+    &quot;by_generation&quot;: {
+      &quot;2&quot;: [
+        &quot;edge_case_injection&quot;
+      ],
+      &quot;3&quot;: [
+        &quot;geography_shuffle&quot;
+      ],
+      &quot;4&quot;: [
+        &quot;adversarial_distribution_shift&quot;
+      ]
+    }
+  }
+}</pre></section>
+</section>
+</body>
+</html>

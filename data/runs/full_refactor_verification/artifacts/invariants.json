@@ -1,0 +1,26 @@
+[
+  {
+    "invariant_id": "templated_newline",
+    "statement": "newline should usually not match dot",
+    "source": "templated",
+    "score": 0.4
+  },
+  {
+    "invariant_id": "templated_fullmatch",
+    "statement": "fullmatch tends to stabilize coalitions",
+    "source": "templated",
+    "score": 0.4
+  },
+  {
+    "invariant_id": "inferred_locality",
+    "statement": "nearby agents exhibit stronger agreement",
+    "source": "inferred",
+    "score": 0.5
+  },
+  {
+    "invariant_id": "emergent_length_sensitivity",
+    "statement": "matching behavior appears length-sensitive",
+    "source": "emergent",
+    "score": 0.4
+  }
+]

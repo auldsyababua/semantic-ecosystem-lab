@@ -1,0 +1,125 @@
+{
+  "null_model_comparisons": [
+    {
+      "generation": "generation_0",
+      "camp_count": 6,
+      "largest_camp": 34,
+      "null_expected_largest": 13.333333333333334,
+      "largest_to_null_ratio": 2.55,
+      "statistically_meaningful_proxy": true
+    },
+    {
+      "generation": "generation_1",
+      "camp_count": 9,
+      "largest_camp": 39,
+      "null_expected_largest": 10.11111111111111,
+      "largest_to_null_ratio": 3.857142857142857,
+      "statistically_meaningful_proxy": true
+    },
+    {
+      "generation": "generation_2",
+      "camp_count": 12,
+      "largest_camp": 30,
+      "null_expected_largest": 10.416666666666666,
+      "largest_to_null_ratio": 2.8800000000000003,
+      "statistically_meaningful_proxy": true
+    },
+    {
+      "generation": "generation_3",
+      "camp_count": 7,
+      "largest_camp": 44,
+      "null_expected_largest": 15.857142857142858,
+      "largest_to_null_ratio": 2.774774774774775,
+      "statistically_meaningful_proxy": true
+    },
+    {
+      "generation": "generation_4",
+      "camp_count": 6,
+      "largest_camp": 62,
+      "null_expected_largest": 17.5,
+      "largest_to_null_ratio": 3.5428571428571427,
+      "statistically_meaningful_proxy": true
+    }
+  ],
+  "randomized_baselines": {
+    "entropy_by_generation": [
+      2.555343387901185,
+      3.073291496086743,
+      3.372967440529607,
+      2.794144166692866,
+      2.551241422327504
+    ],
+    "mean_entropy": 2.869397582707581
+  },
+  "entropy_sanity_checks": {
+    "values": [
+      0.48872343529660334,
+      0.4041501840069948,
+      0.3647433533748662,
+      0.24498895197573606,
+      0.17594904819747909
+    ],
+    "deltas": [
+      -0.08457325128960852,
+      -0.03940683063212863,
+      -0.11975440139913013,
+      -0.06903990377825697
+    ],
+    "monotonic_nonincreasing": true,
+    "nonnegative": true
+  },
+  "cluster_stability_tests": [
+    {
+      "generation": "generation_1",
+      "dominant_jaccard_vs_previous": 0.4897959183673469
+    },
+    {
+      "generation": "generation_2",
+      "dominant_jaccard_vs_previous": 0.0
+    },
+    {
+      "generation": "generation_3",
+      "dominant_jaccard_vs_previous": 0.34545454545454546
+    },
+    {
+      "generation": "generation_4",
+      "dominant_jaccard_vs_previous": 0.41333333333333333
+    }
+  ],
+  "topology_sensitivity_analysis": {
+    "density_by_generation": [
+      0.02911392405063291,
+      0.026265822784810128,
+      0.03196202531645569,
+      0.025949367088607594,
+      0.02879746835443038
+    ],
+    "mean_density": 0.028417721518987343,
+    "range": 0.006012658227848099
+  },
+  "false_consensus_robustness": {
+    "event_count": 5,
+    "robust_events": 3,
+    "max_drift_cases": 58,
+    "dominant_camps": [
+      "camp_0",
+      "camp_1",
+      "camp_2",
+      "camp_3"
+    ]
+  },
+  "phase_transition_summary": {
+    "event_count": 3,
+    "by_generation": {
+      "2": [
+        "edge_case_injection"
+      ],
+      "3": [
+        "geography_shuffle"
+      ],
+      "4": [
+        "adversarial_distribution_shift"
+      ]
+    }
+  }
+}

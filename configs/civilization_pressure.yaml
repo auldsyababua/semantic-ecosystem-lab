@@ -1,0 +1,34 @@
+experiment_id: null
+seed: 4242
+population_size: 120
+initial_case_count: 1400
+generation_count: 12
+topology_density: 2.0
+semantic_pressure: cyclic
+geography:
+  width: 24
+  height: 24
+  layout: grid
+  migration_probability: 0.01
+pressure:
+  inheritance_mix_rate: 0.40
+  mutation_rate: 0.06
+  random_mutant_rate: 0.10
+  family_mutation_rate: 0.12
+  adversary_initial_ratio: 0.18
+  adversary_child_ratio: 0.14
+  local_radius: 2
+phase_shocks:
+  enabled: true
+ablations:
+  geography: false
+  adversaries: false
+  inheritance: false
+  constitutions: false
+  invariant_synthesis: false
+  local_influence: false
+  migration: false
+  clustering: false
+output:
+  root: data/runs
+  write_legacy: false

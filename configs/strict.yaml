@@ -1,0 +1,69 @@
+experiment_id: null
+seed: 1337
+population_size: 80
+initial_case_count: 1000
+generation_count: 5
+topology_density: 2.0
+semantic_pressure: cyclic
+constitution_weights:
+  STRICT_ASCII: 1.0
+  PERMISSIVE_REGEX: 1.0
+  LEGACY_ENGINE: 1.0
+  UNIX_STYLE: 1.0
+  WEIRD_BUT_CONSISTENT: 1.0
+  RANDOM_MUTANT: 1.0
+geography:
+  width: 20
+  height: 20
+  layout: grid
+  migration_probability: 0.0
+  shuffle_generation: 3
+  shuffle_count: 10
+  shuffle_offset: 7
+pressure:
+  inheritance_mix_rate: 0.35
+  mutation_rate: 0.08
+  random_mutant_rate: 0.12
+  family_mutation_rate: 0.15
+  adversary_initial_ratio: 0.22
+  adversary_child_ratio: 0.18
+  local_radius: 2
+phase_shocks:
+  edge_case_generation: 2
+  adversarial_shift_generation: 4
+  enabled: true
+metrics:
+  camp_agreement_threshold: 0.93
+  false_consensus_case_limit: 200
+  false_consensus_drift_threshold: 20
+  disagreement_scan_limit: 120
+  emergent_invariant_threshold: 5
+  emergent_invariant_score_denominator: 20.0
+scoring:
+  invariant_compat_increment: 0.2
+  cooperator_bonus: 0.05
+  adversary_penalty: -0.02
+  conformity_local_agree_weight: 0.45
+  conformity_robust_weight: 0.2
+  conformity_coalition_weight: 0.2
+  conformity_invariant_weight: 0.15
+  diversity_novelty_weight: 0.4
+  diversity_robust_weight: 0.2
+  diversity_invariant_weight: 0.2
+  diversity_anti_coalition_weight: 0.2
+  mixed_novelty_weight: 0.3
+  mixed_local_agree_weight: 0.3
+  mixed_robust_weight: 0.2
+  mixed_invariant_weight: 0.2
+ablations:
+  geography: false
+  adversaries: false
+  inheritance: false
+  constitutions: false
+  invariant_synthesis: false
+  local_influence: false
+  migration: false
+  clustering: false
+output:
+  root: data/runs
+  write_legacy: true
