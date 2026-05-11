@@ -1,0 +1,38 @@
+{
+  "generation": "generation_2",
+  "metrics": {
+    "generation": "generation_2",
+    "population": 80,
+    "semantic_entropy": 0.3647433533748662,
+    "camp_count": 12,
+    "constitution_diversity": 6,
+    "false_consensus_frequency": 0.3333333333333333,
+    "attractor_stability": 0.25,
+    "bifurcation_count": 3,
+    "phase_transitions": 1,
+    "semantic_drift_velocity": 0.29,
+    "adversarial_influence": 0.165111142515765,
+    "invariant_emergence_rate": 0.25
+  },
+  "camp_count": 12,
+  "constitution_distribution": {
+    "RANDOM_MUTANT": 18,
+    "PERMISSIVE_REGEX": 15,
+    "WEIRD_BUT_CONSISTENT": 27,
+    "UNIX_STYLE": 5,
+    "STRICT_ASCII": 13,
+    "LEGACY_ENGINE": 2
+  },
+  "phase_events": [
+    {
+      "generation": 2,
+      "event": "edge_case_injection"
+    }
+  ],
+  "false_consensus": {
+    "camp": "camp_3",
+    "size": 30,
+    "drift_cases": 58,
+    "false_consensus": true
+  }
+}

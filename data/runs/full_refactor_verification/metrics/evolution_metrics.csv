@@ -1,0 +1,6 @@
+generation,population,semantic_entropy,camp_count,constitution_diversity,false_consensus_frequency,attractor_stability,bifurcation_count,phase_transitions,semantic_drift_velocity,adversarial_influence,invariant_emergence_rate
+generation_0,80,0.48872343529660334,6,6,0.0,1.0,0,0,0.0,0.10681519633042337,0.4
+generation_1,80,0.4041501840069948,9,6,0.0,0.25,3,0,0.0,0.1684770246971106,0.25
+generation_2,80,0.3647433533748662,12,6,0.3333333333333333,0.25,3,1,0.29,0.165111142515765,0.25
+generation_3,80,0.24498895197573606,7,6,0.5,1.0,0,1,0.29,0.14216463105447663,0.25
+generation_4,80,0.17594904819747909,6,5,0.6,1.0,0,1,0.29,0.132114892333643,0.25

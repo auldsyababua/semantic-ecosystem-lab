@@ -1,0 +1,2427 @@
+[
+  {
+    "generation": "generation_0",
+    "nodes": [
+      {
+        "aid": "a0",
+        "x": 5,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a1",
+        "x": 18,
+        "y": 5,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a2",
+        "x": 4,
+        "y": 13,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a3",
+        "x": 4,
+        "y": 4,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a4",
+        "x": 6,
+        "y": 15,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a5",
+        "x": 13,
+        "y": 0,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a6",
+        "x": 2,
+        "y": 3,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a7",
+        "x": 4,
+        "y": 11,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a8",
+        "x": 7,
+        "y": 4,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a9",
+        "x": 8,
+        "y": 7,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a10",
+        "x": 10,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a11",
+        "x": 16,
+        "y": 7,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a12",
+        "x": 7,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a13",
+        "x": 10,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a14",
+        "x": 15,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a15",
+        "x": 14,
+        "y": 1,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a16",
+        "x": 13,
+        "y": 19,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a17",
+        "x": 6,
+        "y": 10,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a18",
+        "x": 13,
+        "y": 14,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a19",
+        "x": 17,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a20",
+        "x": 19,
+        "y": 1,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a21",
+        "x": 13,
+        "y": 0,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a22",
+        "x": 5,
+        "y": 12,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a23",
+        "x": 4,
+        "y": 18,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a24",
+        "x": 11,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a25",
+        "x": 15,
+        "y": 1,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a26",
+        "x": 3,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a27",
+        "x": 19,
+        "y": 16,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a28",
+        "x": 13,
+        "y": 10,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a29",
+        "x": 5,
+        "y": 16,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a30",
+        "x": 0,
+        "y": 10,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a31",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a32",
+        "x": 5,
+        "y": 17,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a33",
+        "x": 16,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a34",
+        "x": 2,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a35",
+        "x": 13,
+        "y": 0,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a36",
+        "x": 2,
+        "y": 11,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a37",
+        "x": 8,
+        "y": 14,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a38",
+        "x": 9,
+        "y": 7,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a39",
+        "x": 2,
+        "y": 15,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a40",
+        "x": 17,
+        "y": 18,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a41",
+        "x": 11,
+        "y": 18,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a42",
+        "x": 19,
+        "y": 14,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a43",
+        "x": 6,
+        "y": 14,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a44",
+        "x": 1,
+        "y": 5,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a45",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a46",
+        "x": 9,
+        "y": 0,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a47",
+        "x": 1,
+        "y": 2,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a48",
+        "x": 19,
+        "y": 4,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a49",
+        "x": 10,
+        "y": 10,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a50",
+        "x": 4,
+        "y": 0,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a51",
+        "x": 6,
+        "y": 13,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a52",
+        "x": 4,
+        "y": 6,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a53",
+        "x": 7,
+        "y": 3,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a54",
+        "x": 0,
+        "y": 17,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a55",
+        "x": 16,
+        "y": 6,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a56",
+        "x": 9,
+        "y": 8,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a57",
+        "x": 0,
+        "y": 4,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a58",
+        "x": 10,
+        "y": 19,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a59",
+        "x": 3,
+        "y": 17,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a60",
+        "x": 6,
+        "y": 17,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a61",
+        "x": 13,
+        "y": 7,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a62",
+        "x": 2,
+        "y": 19,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a63",
+        "x": 16,
+        "y": 9,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a64",
+        "x": 19,
+        "y": 2,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a65",
+        "x": 2,
+        "y": 18,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a66",
+        "x": 3,
+        "y": 2,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a67",
+        "x": 11,
+        "y": 0,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a68",
+        "x": 12,
+        "y": 17,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a69",
+        "x": 10,
+        "y": 13,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a70",
+        "x": 0,
+        "y": 19,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a71",
+        "x": 19,
+        "y": 12,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a72",
+        "x": 18,
+        "y": 14,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a73",
+        "x": 10,
+        "y": 8,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a74",
+        "x": 13,
+        "y": 10,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a75",
+        "x": 19,
+        "y": 1,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a76",
+        "x": 11,
+        "y": 6,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a77",
+        "x": 10,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a78",
+        "x": 13,
+        "y": 10,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a79",
+        "x": 7,
+        "y": 8,
+        "constitution": "UNIX_STYLE"
+      }
+    ]
+  },
+  {
+    "generation": "generation_1",
+    "nodes": [
+      {
+        "aid": "a9",
+        "x": 8,
+        "y": 7,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a44",
+        "x": 1,
+        "y": 5,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a57",
+        "x": 0,
+        "y": 4,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a79",
+        "x": 7,
+        "y": 8,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a10",
+        "x": 10,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a77",
+        "x": 10,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a27",
+        "x": 19,
+        "y": 16,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a28",
+        "x": 13,
+        "y": 10,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a74",
+        "x": 13,
+        "y": 10,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a56",
+        "x": 9,
+        "y": 8,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a23",
+        "x": 4,
+        "y": 18,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a39",
+        "x": 2,
+        "y": 15,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a19",
+        "x": 17,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a38",
+        "x": 9,
+        "y": 7,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a14",
+        "x": 15,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a31",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a12",
+        "x": 7,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a55",
+        "x": 16,
+        "y": 6,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a45",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a34",
+        "x": 2,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a7",
+        "x": 4,
+        "y": 11,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a65",
+        "x": 2,
+        "y": 18,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a5",
+        "x": 13,
+        "y": 0,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a21",
+        "x": 13,
+        "y": 0,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a35",
+        "x": 13,
+        "y": 0,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a2",
+        "x": 4,
+        "y": 13,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a24",
+        "x": 11,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a20",
+        "x": 19,
+        "y": 1,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a69",
+        "x": 10,
+        "y": 13,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a52",
+        "x": 4,
+        "y": 6,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "a18",
+        "x": 13,
+        "y": 14,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a26",
+        "x": 3,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a33",
+        "x": 16,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a75",
+        "x": 19,
+        "y": 1,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a13",
+        "x": 10,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a17",
+        "x": 6,
+        "y": 10,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a76",
+        "x": 11,
+        "y": 6,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a42",
+        "x": 19,
+        "y": 14,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a63",
+        "x": 16,
+        "y": 9,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a32",
+        "x": 5,
+        "y": 17,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c0",
+        "x": 19,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c1",
+        "x": 5,
+        "y": 0,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c2",
+        "x": 2,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c3",
+        "x": 17,
+        "y": 19,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c4",
+        "x": 16,
+        "y": 0,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c5",
+        "x": 7,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c6",
+        "x": 5,
+        "y": 13,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c7",
+        "x": 19,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c8",
+        "x": 14,
+        "y": 14,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c9",
+        "x": 11,
+        "y": 4,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c10",
+        "x": 7,
+        "y": 19,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c11",
+        "x": 6,
+        "y": 3,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c12",
+        "x": 11,
+        "y": 14,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c13",
+        "x": 0,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c14",
+        "x": 10,
+        "y": 13,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c15",
+        "x": 16,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c16",
+        "x": 2,
+        "y": 10,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c17",
+        "x": 8,
+        "y": 1,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c18",
+        "x": 4,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c19",
+        "x": 13,
+        "y": 18,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c20",
+        "x": 2,
+        "y": 11,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c21",
+        "x": 4,
+        "y": 0,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c22",
+        "x": 17,
+        "y": 8,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c23",
+        "x": 14,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c24",
+        "x": 6,
+        "y": 7,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "g0_c25",
+        "x": 0,
+        "y": 17,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c26",
+        "x": 4,
+        "y": 0,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c27",
+        "x": 6,
+        "y": 11,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c28",
+        "x": 16,
+        "y": 19,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c29",
+        "x": 12,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c30",
+        "x": 14,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c31",
+        "x": 6,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c32",
+        "x": 13,
+        "y": 2,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c33",
+        "x": 5,
+        "y": 9,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c34",
+        "x": 4,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c35",
+        "x": 1,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c36",
+        "x": 1,
+        "y": 12,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c37",
+        "x": 13,
+        "y": 18,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c38",
+        "x": 5,
+        "y": 9,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c39",
+        "x": 18,
+        "y": 18,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      }
+    ]
+  },
+  {
+    "generation": "generation_2",
+    "nodes": [
+      {
+        "aid": "g0_c5",
+        "x": 7,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c12",
+        "x": 11,
+        "y": 14,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c20",
+        "x": 2,
+        "y": 11,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a24",
+        "x": 11,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c2",
+        "x": 2,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c15",
+        "x": 16,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c10",
+        "x": 7,
+        "y": 19,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c38",
+        "x": 5,
+        "y": 9,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c23",
+        "x": 14,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c39",
+        "x": 18,
+        "y": 18,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a45",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c9",
+        "x": 11,
+        "y": 4,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a31",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c25",
+        "x": 0,
+        "y": 17,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c33",
+        "x": 5,
+        "y": 9,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c21",
+        "x": 4,
+        "y": 0,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c32",
+        "x": 13,
+        "y": 2,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c0",
+        "x": 19,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a63",
+        "x": 16,
+        "y": 9,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a19",
+        "x": 17,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c13",
+        "x": 0,
+        "y": 7,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c37",
+        "x": 13,
+        "y": 18,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "a12",
+        "x": 7,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a27",
+        "x": 19,
+        "y": 16,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a69",
+        "x": 10,
+        "y": 13,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c8",
+        "x": 14,
+        "y": 14,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a10",
+        "x": 10,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a14",
+        "x": 15,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a77",
+        "x": 10,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a17",
+        "x": 6,
+        "y": 10,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c34",
+        "x": 4,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c35",
+        "x": 1,
+        "y": 16,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a13",
+        "x": 10,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "a76",
+        "x": 11,
+        "y": 6,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c3",
+        "x": 17,
+        "y": 19,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c28",
+        "x": 16,
+        "y": 19,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c7",
+        "x": 19,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a42",
+        "x": 19,
+        "y": 14,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a52",
+        "x": 4,
+        "y": 6,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "g0_c14",
+        "x": 10,
+        "y": 13,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c0",
+        "x": 13,
+        "y": 18,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c1",
+        "x": 12,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c2",
+        "x": 8,
+        "y": 16,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g1_c3",
+        "x": 16,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c4",
+        "x": 8,
+        "y": 8,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c5",
+        "x": 0,
+        "y": 9,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c6",
+        "x": 0,
+        "y": 3,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c7",
+        "x": 10,
+        "y": 6,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c8",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c9",
+        "x": 6,
+        "y": 11,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c10",
+        "x": 1,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c11",
+        "x": 19,
+        "y": 6,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c12",
+        "x": 8,
+        "y": 11,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c13",
+        "x": 11,
+        "y": 2,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c14",
+        "x": 10,
+        "y": 3,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c15",
+        "x": 15,
+        "y": 9,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c16",
+        "x": 10,
+        "y": 12,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c17",
+        "x": 15,
+        "y": 13,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c18",
+        "x": 3,
+        "y": 18,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c19",
+        "x": 11,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c20",
+        "x": 3,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c21",
+        "x": 6,
+        "y": 14,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c22",
+        "x": 13,
+        "y": 18,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c23",
+        "x": 19,
+        "y": 19,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c24",
+        "x": 11,
+        "y": 3,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c25",
+        "x": 8,
+        "y": 0,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c26",
+        "x": 4,
+        "y": 9,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "g1_c27",
+        "x": 5,
+        "y": 3,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c28",
+        "x": 16,
+        "y": 9,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c29",
+        "x": 3,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c30",
+        "x": 14,
+        "y": 8,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c31",
+        "x": 13,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c32",
+        "x": 12,
+        "y": 19,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c33",
+        "x": 3,
+        "y": 9,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c34",
+        "x": 16,
+        "y": 4,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c35",
+        "x": 5,
+        "y": 10,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c36",
+        "x": 15,
+        "y": 14,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c37",
+        "x": 8,
+        "y": 4,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c38",
+        "x": 17,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c39",
+        "x": 6,
+        "y": 3,
+        "constitution": "RANDOM_MUTANT"
+      }
+    ]
+  },
+  {
+    "generation": "generation_3",
+    "nodes": [
+      {
+        "aid": "g1_c2",
+        "x": 15,
+        "y": 3,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c12",
+        "x": 18,
+        "y": 1,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c5",
+        "x": 14,
+        "y": 15,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c34",
+        "x": 3,
+        "y": 11,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c20",
+        "x": 9,
+        "y": 18,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c0",
+        "x": 0,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c18",
+        "x": 10,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c1",
+        "x": 19,
+        "y": 12,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c15",
+        "x": 3,
+        "y": 19,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c5",
+        "x": 7,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c38",
+        "x": 17,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a24",
+        "x": 11,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c27",
+        "x": 5,
+        "y": 3,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g0_c10",
+        "x": 7,
+        "y": 19,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g1_c11",
+        "x": 19,
+        "y": 6,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c36",
+        "x": 15,
+        "y": 14,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g1_c37",
+        "x": 8,
+        "y": 4,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c26",
+        "x": 4,
+        "y": 9,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "g0_c23",
+        "x": 14,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c39",
+        "x": 18,
+        "y": 18,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a45",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a31",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a12",
+        "x": 7,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a10",
+        "x": 10,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a14",
+        "x": 15,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a77",
+        "x": 10,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c3",
+        "x": 16,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c8",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c14",
+        "x": 10,
+        "y": 3,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c20",
+        "x": 3,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c31",
+        "x": 13,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c9",
+        "x": 11,
+        "y": 4,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c9",
+        "x": 6,
+        "y": 11,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c21",
+        "x": 6,
+        "y": 14,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c15",
+        "x": 15,
+        "y": 9,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g1_c4",
+        "x": 8,
+        "y": 8,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g0_c32",
+        "x": 13,
+        "y": 2,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c23",
+        "x": 19,
+        "y": 19,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c16",
+        "x": 10,
+        "y": 12,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g0_c38",
+        "x": 5,
+        "y": 9,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g2_c0",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c1",
+        "x": 4,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c2",
+        "x": 1,
+        "y": 11,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c3",
+        "x": 18,
+        "y": 10,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c4",
+        "x": 4,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c5",
+        "x": 9,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c6",
+        "x": 13,
+        "y": 2,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c7",
+        "x": 16,
+        "y": 2,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g2_c8",
+        "x": 0,
+        "y": 14,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g2_c9",
+        "x": 15,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c10",
+        "x": 8,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c11",
+        "x": 10,
+        "y": 2,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c12",
+        "x": 8,
+        "y": 10,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g2_c13",
+        "x": 13,
+        "y": 12,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g2_c14",
+        "x": 11,
+        "y": 19,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c15",
+        "x": 5,
+        "y": 7,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c16",
+        "x": 12,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c17",
+        "x": 11,
+        "y": 13,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c18",
+        "x": 13,
+        "y": 1,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g2_c19",
+        "x": 17,
+        "y": 0,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c20",
+        "x": 1,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c21",
+        "x": 4,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c22",
+        "x": 1,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c23",
+        "x": 11,
+        "y": 7,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c24",
+        "x": 18,
+        "y": 17,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c25",
+        "x": 1,
+        "y": 19,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c26",
+        "x": 19,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c27",
+        "x": 11,
+        "y": 19,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c28",
+        "x": 10,
+        "y": 6,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c29",
+        "x": 13,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c30",
+        "x": 1,
+        "y": 19,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c31",
+        "x": 7,
+        "y": 1,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c32",
+        "x": 1,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g2_c33",
+        "x": 16,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g2_c34",
+        "x": 3,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c35",
+        "x": 14,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c36",
+        "x": 15,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c37",
+        "x": 14,
+        "y": 0,
+        "constitution": "LEGACY_ENGINE"
+      },
+      {
+        "aid": "g2_c38",
+        "x": 11,
+        "y": 16,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c39",
+        "x": 1,
+        "y": 0,
+        "constitution": "UNIX_STYLE"
+      }
+    ]
+  },
+  {
+    "generation": "generation_4",
+    "nodes": [
+      {
+        "aid": "g1_c2",
+        "x": 15,
+        "y": 3,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g0_c23",
+        "x": 14,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a45",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c8",
+        "x": 4,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c31",
+        "x": 13,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c11",
+        "x": 10,
+        "y": 2,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c16",
+        "x": 12,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c14",
+        "x": 10,
+        "y": 3,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c12",
+        "x": 8,
+        "y": 10,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g2_c36",
+        "x": 15,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c1",
+        "x": 19,
+        "y": 12,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c26",
+        "x": 19,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c18",
+        "x": 10,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a31",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c0",
+        "x": 6,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c7",
+        "x": 16,
+        "y": 2,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "a10",
+        "x": 10,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c39",
+        "x": 18,
+        "y": 18,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c5",
+        "x": 14,
+        "y": 15,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a14",
+        "x": 15,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c21",
+        "x": 4,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "a24",
+        "x": 11,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c20",
+        "x": 9,
+        "y": 18,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c0",
+        "x": 0,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c31",
+        "x": 7,
+        "y": 1,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g1_c3",
+        "x": 16,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a77",
+        "x": 10,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c34",
+        "x": 3,
+        "y": 11,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "a12",
+        "x": 7,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g0_c9",
+        "x": 11,
+        "y": 4,
+        "constitution": "STRICT_ASCII"
+      },
+      {
+        "aid": "g2_c9",
+        "x": 15,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c34",
+        "x": 3,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g1_c20",
+        "x": 3,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c29",
+        "x": 13,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c3",
+        "x": 18,
+        "y": 10,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c39",
+        "x": 1,
+        "y": 0,
+        "constitution": "UNIX_STYLE"
+      },
+      {
+        "aid": "g2_c25",
+        "x": 1,
+        "y": 19,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c1",
+        "x": 4,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g2_c6",
+        "x": 13,
+        "y": 2,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g2_c32",
+        "x": 1,
+        "y": 15,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g3_c0",
+        "x": 8,
+        "y": 2,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c1",
+        "x": 19,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c2",
+        "x": 11,
+        "y": 11,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c3",
+        "x": 16,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c4",
+        "x": 5,
+        "y": 7,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c5",
+        "x": 12,
+        "y": 8,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c6",
+        "x": 12,
+        "y": 12,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c7",
+        "x": 0,
+        "y": 13,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c8",
+        "x": 1,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c9",
+        "x": 7,
+        "y": 16,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c10",
+        "x": 12,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c11",
+        "x": 3,
+        "y": 14,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g3_c12",
+        "x": 14,
+        "y": 3,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c13",
+        "x": 17,
+        "y": 11,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c14",
+        "x": 17,
+        "y": 4,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c15",
+        "x": 6,
+        "y": 17,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c16",
+        "x": 2,
+        "y": 1,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c17",
+        "x": 2,
+        "y": 3,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c18",
+        "x": 17,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c19",
+        "x": 16,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c20",
+        "x": 5,
+        "y": 1,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c21",
+        "x": 5,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c22",
+        "x": 6,
+        "y": 1,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c23",
+        "x": 16,
+        "y": 17,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c24",
+        "x": 2,
+        "y": 14,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c25",
+        "x": 2,
+        "y": 5,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c26",
+        "x": 15,
+        "y": 5,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c27",
+        "x": 3,
+        "y": 11,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c28",
+        "x": 11,
+        "y": 13,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c29",
+        "x": 8,
+        "y": 9,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c30",
+        "x": 17,
+        "y": 10,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c31",
+        "x": 9,
+        "y": 17,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c32",
+        "x": 9,
+        "y": 16,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c33",
+        "x": 19,
+        "y": 2,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g3_c34",
+        "x": 9,
+        "y": 0,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c35",
+        "x": 16,
+        "y": 8,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c36",
+        "x": 1,
+        "y": 4,
+        "constitution": "PERMISSIVE_REGEX"
+      },
+      {
+        "aid": "g3_c37",
+        "x": 17,
+        "y": 15,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      },
+      {
+        "aid": "g3_c38",
+        "x": 12,
+        "y": 17,
+        "constitution": "RANDOM_MUTANT"
+      },
+      {
+        "aid": "g3_c39",
+        "x": 10,
+        "y": 6,
+        "constitution": "WEIRD_BUT_CONSISTENT"
+      }
+    ]
+  }
+]

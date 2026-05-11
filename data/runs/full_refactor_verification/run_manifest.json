@@ -1,0 +1,3836 @@
+{
+  "experiment_id": "full_refactor_verification",
+  "seed": 1337,
+  "config_path": "configs/strict.yaml",
+  "config": {
+    "experiment_id": "full_refactor_verification",
+    "seed": 1337,
+    "population_size": 80,
+    "initial_case_count": 1000,
+    "generation_count": 5,
+    "topology_density": 2.0,
+    "semantic_pressure": "cyclic",
+    "constitution_weights": {
+      "STRICT_ASCII": 1.0,
+      "PERMISSIVE_REGEX": 1.0,
+      "LEGACY_ENGINE": 1.0,
+      "UNIX_STYLE": 1.0,
+      "WEIRD_BUT_CONSISTENT": 1.0,
+      "RANDOM_MUTANT": 1.0
+    },
+    "geography": {
+      "width": 20,
+      "height": 20,
+      "layout": "grid",
+      "migration_probability": 0.0,
+      "shuffle_generation": 3,
+      "shuffle_count": 10,
+      "shuffle_offset": 7
+    },
+    "pressure": {
+      "inheritance_mix_rate": 0.35,
+      "mutation_rate": 0.08,
+      "random_mutant_rate": 0.12,
+      "family_mutation_rate": 0.15,
+      "adversary_initial_ratio": 0.22,
+      "adversary_child_ratio": 0.18,
+      "local_radius": 2
+    },
+    "phase_shocks": {
+      "edge_case_generation": 2,
+      "adversarial_shift_generation": 4,
+      "enabled": true
+    },
+    "metrics": {
+      "camp_agreement_threshold": 0.93,
+      "false_consensus_case_limit": 200,
+      "false_consensus_drift_threshold": 20,
+      "disagreement_scan_limit": 120,
+      "emergent_invariant_threshold": 5,
+      "emergent_invariant_score_denominator": 20.0
+    },
+    "scoring": {
+      "invariant_compat_increment": 0.2,
+      "cooperator_bonus": 0.05,
+      "adversary_penalty": -0.02,
+      "conformity_local_agree_weight": 0.45,
+      "conformity_robust_weight": 0.2,
+      "conformity_coalition_weight": 0.2,
+      "conformity_invariant_weight": 0.15,
+      "diversity_novelty_weight": 0.4,
+      "diversity_robust_weight": 0.2,
+      "diversity_invariant_weight": 0.2,
+      "diversity_anti_coalition_weight": 0.2,
+      "mixed_novelty_weight": 0.3,
+      "mixed_local_agree_weight": 0.3,
+      "mixed_robust_weight": 0.2,
+      "mixed_invariant_weight": 0.2
+    },
+    "ablations": {
+      "geography": false,
+      "adversaries": false,
+      "inheritance": false,
+      "constitutions": false,
+      "invariant_synthesis": false,
+      "local_influence": false,
+      "migration": false,
+      "clustering": false
+    },
+    "output": {
+      "root": "data/runs",
+      "write_legacy": true
+    },
+    "config_path": "configs/strict.yaml"
+  },
+  "topology_initialization": [
+    {
+      "aid": "a0",
+      "x": 5,
+      "y": 4,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a1",
+      "x": 18,
+      "y": 5,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a2",
+      "x": 4,
+      "y": 13,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a3",
+      "x": 4,
+      "y": 4,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a4",
+      "x": 6,
+      "y": 15,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a5",
+      "x": 13,
+      "y": 0,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a6",
+      "x": 2,
+      "y": 3,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a7",
+      "x": 4,
+      "y": 11,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a8",
+      "x": 7,
+      "y": 4,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a9",
+      "x": 8,
+      "y": 7,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a10",
+      "x": 10,
+      "y": 12,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a11",
+      "x": 16,
+      "y": 7,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a12",
+      "x": 7,
+      "y": 14,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a13",
+      "x": 10,
+      "y": 4,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a14",
+      "x": 15,
+      "y": 12,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a15",
+      "x": 14,
+      "y": 1,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a16",
+      "x": 13,
+      "y": 19,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a17",
+      "x": 6,
+      "y": 10,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a18",
+      "x": 13,
+      "y": 14,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a19",
+      "x": 17,
+      "y": 15,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a20",
+      "x": 19,
+      "y": 1,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a21",
+      "x": 13,
+      "y": 0,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a22",
+      "x": 5,
+      "y": 12,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a23",
+      "x": 4,
+      "y": 18,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a24",
+      "x": 11,
+      "y": 1,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a25",
+      "x": 15,
+      "y": 1,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a26",
+      "x": 3,
+      "y": 16,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a27",
+      "x": 19,
+      "y": 16,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a28",
+      "x": 13,
+      "y": 10,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a29",
+      "x": 5,
+      "y": 16,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a30",
+      "x": 0,
+      "y": 10,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a31",
+      "x": 6,
+      "y": 16,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a32",
+      "x": 5,
+      "y": 17,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a33",
+      "x": 16,
+      "y": 7,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a34",
+      "x": 2,
+      "y": 7,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a35",
+      "x": 13,
+      "y": 0,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a36",
+      "x": 2,
+      "y": 11,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a37",
+      "x": 8,
+      "y": 14,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a38",
+      "x": 9,
+      "y": 7,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a39",
+      "x": 2,
+      "y": 15,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a40",
+      "x": 17,
+      "y": 18,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a41",
+      "x": 11,
+      "y": 18,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a42",
+      "x": 19,
+      "y": 14,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a43",
+      "x": 6,
+      "y": 14,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a44",
+      "x": 1,
+      "y": 5,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a45",
+      "x": 4,
+      "y": 15,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a46",
+      "x": 9,
+      "y": 0,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a47",
+      "x": 1,
+      "y": 2,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a48",
+      "x": 19,
+      "y": 4,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a49",
+      "x": 10,
+      "y": 10,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a50",
+      "x": 4,
+      "y": 0,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a51",
+      "x": 6,
+      "y": 13,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a52",
+      "x": 4,
+      "y": 6,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a53",
+      "x": 7,
+      "y": 3,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a54",
+      "x": 0,
+      "y": 17,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a55",
+      "x": 16,
+      "y": 6,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a56",
+      "x": 9,
+      "y": 8,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a57",
+      "x": 0,
+      "y": 4,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a58",
+      "x": 10,
+      "y": 19,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a59",
+      "x": 3,
+      "y": 17,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a60",
+      "x": 6,
+      "y": 17,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a61",
+      "x": 13,
+      "y": 7,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a62",
+      "x": 2,
+      "y": 19,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a63",
+      "x": 16,
+      "y": 9,
+      "constitution": "RANDOM_MUTANT"
+    },
+    {
+      "aid": "a64",
+      "x": 19,
+      "y": 2,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a65",
+      "x": 2,
+      "y": 18,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a66",
+      "x": 3,
+      "y": 2,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a67",
+      "x": 11,
+      "y": 0,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a68",
+      "x": 12,
+      "y": 17,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a69",
+      "x": 10,
+      "y": 13,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a70",
+      "x": 0,
+      "y": 19,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a71",
+      "x": 19,
+      "y": 12,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a72",
+      "x": 18,
+      "y": 14,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a73",
+      "x": 10,
+      "y": 8,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a74",
+      "x": 13,
+      "y": 10,
+      "constitution": "UNIX_STYLE"
+    },
+    {
+      "aid": "a75",
+      "x": 19,
+      "y": 1,
+      "constitution": "STRICT_ASCII"
+    },
+    {
+      "aid": "a76",
+      "x": 11,
+      "y": 6,
+      "constitution": "PERMISSIVE_REGEX"
+    },
+    {
+      "aid": "a77",
+      "x": 10,
+      "y": 14,
+      "constitution": "WEIRD_BUT_CONSISTENT"
+    },
+    {
+      "aid": "a78",
+      "x": 13,
+      "y": 10,
+      "constitution": "LEGACY_ENGINE"
+    },
+    {
+      "aid": "a79",
+      "x": 7,
+      "y": 8,
+      "constitution": "UNIX_STYLE"
+    }
+  ],
+  "initial_constitution_distribution": {
+    "PERMISSIVE_REGEX": 13,
+    "LEGACY_ENGINE": 11,
+    "STRICT_ASCII": 19,
+    "UNIX_STYLE": 15,
+    "WEIRD_BUT_CONSISTENT": 7,
+    "RANDOM_MUTANT": 15
+  },
+  "constitution_distributions": [
+    {
+      "generation": "generation_0",
+      "distribution": {
+        "PERMISSIVE_REGEX": 13,
+        "LEGACY_ENGINE": 11,
+        "STRICT_ASCII": 19,
+        "UNIX_STYLE": 15,
+        "WEIRD_BUT_CONSISTENT": 7,
+        "RANDOM_MUTANT": 15
+      }
+    },
+    {
+      "generation": "generation_1",
+      "distribution": {
+        "UNIX_STYLE": 17,
+        "STRICT_ASCII": 24,
+        "WEIRD_BUT_CONSISTENT": 14,
+        "RANDOM_MUTANT": 12,
+        "PERMISSIVE_REGEX": 11,
+        "LEGACY_ENGINE": 2
+      }
+    },
+    {
+      "generation": "generation_2",
+      "distribution": {
+        "RANDOM_MUTANT": 18,
+        "PERMISSIVE_REGEX": 15,
+        "WEIRD_BUT_CONSISTENT": 27,
+        "UNIX_STYLE": 5,
+        "STRICT_ASCII": 13,
+        "LEGACY_ENGINE": 2
+      }
+    },
+    {
+      "generation": "generation_3",
+      "distribution": {
+        "UNIX_STYLE": 3,
+        "PERMISSIVE_REGEX": 9,
+        "RANDOM_MUTANT": 23,
+        "WEIRD_BUT_CONSISTENT": 36,
+        "STRICT_ASCII": 7,
+        "LEGACY_ENGINE": 2
+      }
+    },
+    {
+      "generation": "generation_4",
+      "distribution": {
+        "UNIX_STYLE": 2,
+        "RANDOM_MUTANT": 31,
+        "WEIRD_BUT_CONSISTENT": 40,
+        "PERMISSIVE_REGEX": 5,
+        "STRICT_ASCII": 2
+      }
+    }
+  ],
+  "migration_events": [
+    {
+      "generation": 3,
+      "aid": "g1_c2",
+      "from": {
+        "x": 8,
+        "y": 16
+      },
+      "to": {
+        "x": 15,
+        "y": 3
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g0_c12",
+      "from": {
+        "x": 11,
+        "y": 14
+      },
+      "to": {
+        "x": 18,
+        "y": 1
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g0_c5",
+      "from": {
+        "x": 7,
+        "y": 8
+      },
+      "to": {
+        "x": 14,
+        "y": 15
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g1_c34",
+      "from": {
+        "x": 16,
+        "y": 4
+      },
+      "to": {
+        "x": 3,
+        "y": 11
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g0_c20",
+      "from": {
+        "x": 2,
+        "y": 11
+      },
+      "to": {
+        "x": 9,
+        "y": 18
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g1_c0",
+      "from": {
+        "x": 13,
+        "y": 18
+      },
+      "to": {
+        "x": 0,
+        "y": 5
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g1_c18",
+      "from": {
+        "x": 3,
+        "y": 18
+      },
+      "to": {
+        "x": 10,
+        "y": 5
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g1_c1",
+      "from": {
+        "x": 12,
+        "y": 5
+      },
+      "to": {
+        "x": 19,
+        "y": 12
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g0_c15",
+      "from": {
+        "x": 16,
+        "y": 12
+      },
+      "to": {
+        "x": 3,
+        "y": 19
+      },
+      "reason": "geography_shuffle"
+    },
+    {
+      "generation": 3,
+      "aid": "g1_c5",
+      "from": {
+        "x": 0,
+        "y": 9
+      },
+      "to": {
+        "x": 7,
+        "y": 16
+      },
+      "reason": "geography_shuffle"
+    }
+  ],
+  "mutation_history": [
+    {
+      "generation": 0,
+      "child_index": 0,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 0,
+      "child_index": 0,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 0,
+      "child_index": 1,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "token_stream_interpreter",
+      "new_value": "recursive_descent"
+    },
+    {
+      "generation": 0,
+      "child_index": 2,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 2,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 0,
+      "child_index": 3,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 0,
+      "child_index": 4,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 0,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 0,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "search",
+      "new_value": "fullmatch"
+    },
+    {
+      "generation": 0,
+      "child_index": 5,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 5,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 6,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 6,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 0,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 0,
+      "child_index": 8,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 9,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 0,
+      "child_index": 10,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 10,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 12,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 12,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 12,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 12,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 0,
+      "child_index": 13,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 0,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 15,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 0,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 16,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 0,
+      "child_index": 17,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 0,
+      "child_index": 18,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "finite_state_machine"
+    },
+    {
+      "generation": 0,
+      "child_index": 20,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 22,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "recursive_descent"
+    },
+    {
+      "generation": 0,
+      "child_index": 24,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 0,
+      "child_index": 24,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 25,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 25,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 25,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 0,
+      "child_index": 26,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 0,
+      "child_index": 27,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 0,
+      "child_index": 27,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 27,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 0,
+      "child_index": 28,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 0,
+      "child_index": 28,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 0,
+      "child_index": 29,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 0,
+      "child_index": 29,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 0,
+      "child_index": 29,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 0,
+      "child_index": 30,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 0,
+      "child_index": 31,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 32,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 33,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 0,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 0,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 0,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 0,
+      "child_index": 35,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 36,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 0,
+      "child_index": 36,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 36,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 0,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 0,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 37,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 0,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 0,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 0,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 0,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 0,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 0,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 1,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 2,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "search",
+      "new_value": "fullmatch"
+    },
+    {
+      "generation": 1,
+      "child_index": 3,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 1,
+      "child_index": 4,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 1,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 5,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 5,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 1,
+      "child_index": 6,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 6,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 6,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 7,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 7,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "recursive_descent"
+    },
+    {
+      "generation": 1,
+      "child_index": 9,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 9,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "token_stream_interpreter",
+      "new_value": "finite_state_machine"
+    },
+    {
+      "generation": 1,
+      "child_index": 10,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 11,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "search",
+      "new_value": "fullmatch"
+    },
+    {
+      "generation": 1,
+      "child_index": 11,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "finite_state_machine"
+    },
+    {
+      "generation": 1,
+      "child_index": 12,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 1,
+      "child_index": 13,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 1,
+      "child_index": 14,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 14,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 1,
+      "child_index": 14,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 14,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 15,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 1,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 16,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 1,
+      "child_index": 17,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 1,
+      "child_index": 17,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 1,
+      "child_index": 17,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 17,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 1,
+      "child_index": 17,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 18,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 1,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 19,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 1,
+      "child_index": 21,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "strict",
+      "new_value": "ignore"
+    },
+    {
+      "generation": 1,
+      "child_index": 22,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 24,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 24,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 24,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 25,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "compiled_instruction_vm"
+    },
+    {
+      "generation": 1,
+      "child_index": 26,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 26,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 26,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 1,
+      "child_index": 27,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 27,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 1,
+      "child_index": 27,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 1,
+      "child_index": 28,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 28,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 29,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 29,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 29,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 29,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 29,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "search",
+      "new_value": "fullmatch"
+    },
+    {
+      "generation": 1,
+      "child_index": 30,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 30,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 30,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 1,
+      "child_index": 30,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 31,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 32,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 1,
+      "child_index": 32,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 33,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 33,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 1,
+      "child_index": 33,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 1,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 34,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 34,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 1,
+      "child_index": 35,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 35,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 35,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "recursive_descent"
+    },
+    {
+      "generation": 1,
+      "child_index": 36,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 36,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 36,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "search",
+      "new_value": "fullmatch"
+    },
+    {
+      "generation": 1,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 1,
+      "child_index": 38,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 1,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 1,
+      "child_index": 38,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 1,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 1,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 1,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 1,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 2,
+      "child_index": 2,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 2,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 2,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 2,
+      "child_index": 3,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 2,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 4,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 2,
+      "child_index": 4,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 2,
+      "child_index": 5,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 2,
+      "child_index": 5,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 6,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 2,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 8,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 2,
+      "child_index": 8,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 2,
+      "child_index": 8,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 2,
+      "child_index": 9,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 9,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 10,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 2,
+      "child_index": 10,
+      "event": "inheritance",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 2,
+      "child_index": 12,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "finite_state_machine",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 2,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 2,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 2,
+      "child_index": 13,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 2,
+      "child_index": 14,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 2,
+      "child_index": 14,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 2,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 2,
+      "child_index": 15,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 15,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 2,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 16,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 2,
+      "child_index": 17,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 2,
+      "child_index": 18,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 2,
+      "child_index": 20,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 2,
+      "child_index": 20,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 23,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 23,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 2,
+      "child_index": 23,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 2,
+      "child_index": 23,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 2,
+      "child_index": 24,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 2,
+      "child_index": 24,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 2,
+      "child_index": 24,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "finite_state_machine",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 2,
+      "child_index": 25,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 25,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "finite_state_machine",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 2,
+      "child_index": 26,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 26,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 2,
+      "child_index": 26,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 2,
+      "child_index": 27,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "token_stream_interpreter",
+      "new_value": "compiled_instruction_vm"
+    },
+    {
+      "generation": 2,
+      "child_index": 30,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 31,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 2,
+      "child_index": 33,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 33,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 2,
+      "child_index": 33,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 2,
+      "child_index": 33,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 2,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 35,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 35,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 2,
+      "child_index": 37,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 37,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 2,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 38,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 2,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 2,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 2,
+      "child_index": 39,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 2,
+      "child_index": 39,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 3,
+      "child_index": 1,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 3,
+      "child_index": 1,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 1,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 3,
+      "child_index": 2,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 2,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 3,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 3,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "finite_state_machine",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 3,
+      "child_index": 5,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 3,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 3,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 3,
+      "child_index": 7,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 8,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 3,
+      "child_index": 10,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 10,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 3,
+      "child_index": 11,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 3,
+      "child_index": 11,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 11,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "finite_state_machine"
+    },
+    {
+      "generation": 3,
+      "child_index": 12,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 3,
+      "child_index": 14,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 14,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 14,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 3,
+      "child_index": 14,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 3,
+      "child_index": 14,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 3,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 18,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 18,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 3,
+      "child_index": 20,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 22,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 3,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 3,
+      "child_index": 23,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 3,
+      "child_index": 24,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 3,
+      "child_index": 24,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 26,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 27,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 3,
+      "child_index": 27,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 3,
+      "child_index": 28,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 3,
+      "child_index": 30,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 3,
+      "child_index": 30,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 30,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 3,
+      "child_index": 30,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 3,
+      "child_index": 31,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 3,
+      "child_index": 31,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 3,
+      "child_index": 32,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 3,
+      "child_index": 33,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 33,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 3,
+      "child_index": 33,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "compiled_instruction_vm"
+    },
+    {
+      "generation": 3,
+      "child_index": 34,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 3,
+      "child_index": 35,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 3,
+      "child_index": 36,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 36,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 3,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 37,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 3,
+      "child_index": 37,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "finite_state_machine"
+    },
+    {
+      "generation": 3,
+      "child_index": 38,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 3,
+      "child_index": 39,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 3,
+      "child_index": 39,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 0,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 0,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 1,
+      "event": "inheritance",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 4,
+      "child_index": 2,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 4,
+      "child_index": 3,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 4,
+      "child_index": 5,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 5,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 5,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 4,
+      "child_index": 6,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 6,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 6,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "recursive_descent"
+    },
+    {
+      "generation": 4,
+      "child_index": 7,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 4,
+      "child_index": 8,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 8,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "compiled_instruction_vm",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 4,
+      "child_index": 9,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 10,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 10,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 4,
+      "child_index": 10,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "token_stream_interpreter"
+    },
+    {
+      "generation": 4,
+      "child_index": 12,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 4,
+      "child_index": 13,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 4,
+      "child_index": 13,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 13,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 15,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 15,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 15,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 16,
+      "event": "mutation",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 4,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 4,
+      "child_index": 16,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 16,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 16,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "finite_state_machine",
+      "new_value": "table_driven_matcher"
+    },
+    {
+      "generation": 4,
+      "child_index": 17,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 17,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 17,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 4,
+      "child_index": 18,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 19,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 19,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 20,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 20,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 20,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 20,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "table_driven_matcher",
+      "new_value": "direct_pattern_walker"
+    },
+    {
+      "generation": 4,
+      "child_index": 21,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 4,
+      "child_index": 21,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 21,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 4,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 4,
+      "child_index": 22,
+      "event": "mutation",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 22,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 4,
+      "child_index": 23,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "inclusive",
+      "new_value": "partial"
+    },
+    {
+      "generation": 4,
+      "child_index": 23,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 24,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 25,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 26,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 26,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 27,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 27,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 27,
+      "event": "mutation",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 27,
+      "event": "mutation",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 28,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 30,
+      "event": "mutation",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 31,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 31,
+      "event": "mutation",
+      "field": "search_vs_fullmatch",
+      "old_value": "fullmatch",
+      "new_value": "search"
+    },
+    {
+      "generation": 4,
+      "child_index": 32,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 32,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 32,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "empty",
+      "new_value": "error"
+    },
+    {
+      "generation": 4,
+      "child_index": 33,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 33,
+      "event": "mutation",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 33,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "direct_pattern_walker",
+      "new_value": "finite_state_machine"
+    },
+    {
+      "generation": 4,
+      "child_index": 35,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": false,
+      "new_value": true
+    },
+    {
+      "generation": 4,
+      "child_index": 35,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 35,
+      "event": "inheritance",
+      "field": "range_inclusivity",
+      "old_value": "partial",
+      "new_value": "inclusive"
+    },
+    {
+      "generation": 4,
+      "child_index": 36,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "eager",
+      "new_value": "lazy"
+    },
+    {
+      "generation": 4,
+      "child_index": 37,
+      "event": "inheritance",
+      "field": "dot_matches_newline",
+      "old_value": true,
+      "new_value": false
+    },
+    {
+      "generation": 4,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "malformed_pattern_policy",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 38,
+      "event": "mutation",
+      "field": "anchor_semantics",
+      "old_value": "ignore",
+      "new_value": "strict"
+    },
+    {
+      "generation": 4,
+      "child_index": 38,
+      "event": "inheritance",
+      "field": "empty_class_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 38,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "token_stream_interpreter",
+      "new_value": "compiled_instruction_vm"
+    },
+    {
+      "generation": 4,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "invalid_range_behavior",
+      "old_value": "error",
+      "new_value": "empty"
+    },
+    {
+      "generation": 4,
+      "child_index": 39,
+      "event": "inheritance",
+      "field": "eager_vs_lazy_failure",
+      "old_value": "lazy",
+      "new_value": "eager"
+    },
+    {
+      "generation": 4,
+      "child_index": 39,
+      "event": "family_mutation",
+      "field": "family",
+      "old_value": "finite_state_machine",
+      "new_value": "token_stream_interpreter"
+    }
+  ],
+  "phase_events": [
+    {
+      "generation": 2,
+      "event": "edge_case_injection"
+    },
+    {
+      "generation": 3,
+      "event": "geography_shuffle"
+    },
+    {
+      "generation": 4,
+      "event": "adversarial_distribution_shift"
+    }
+  ],
+  "output_paths": {
+    "metrics_json": "data/runs/full_refactor_verification/metrics/evolution_metrics.json",
+    "metrics_csv": "data/runs/full_refactor_verification/metrics/evolution_metrics.csv",
+    "events_jsonl": "data/runs/full_refactor_verification/logs/events.jsonl",
+    "report_html": "data/runs/full_refactor_verification/reports/report.html",
+    "manifest": "data/runs/full_refactor_verification/run_manifest.json",
+    "geography_heatmaps": "data/runs/full_refactor_verification/artifacts/geography_heatmaps.json",
+    "semantic_distance_matrices": "data/runs/full_refactor_verification/artifacts/semantic_distance_matrices.json"
+  }
+}
